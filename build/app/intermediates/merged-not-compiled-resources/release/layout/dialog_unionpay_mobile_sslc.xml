@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/tvUnionPay"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                app:srcCompat="@drawable/ic_unionpay"/>
+
+            <TextView
+                android:id="@+id/tvUnionPayHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvUnionPay"
+                android:layout_alignTop="@+id/tvUnionPay"
+                android:layout_alignBottom="@+id/tvUnionPay"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:text="@string/unionpay"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvUnionPay"
+                android:layout_marginTop="10dp"
+                android:padding="8dp"
+                android:text="@string/verify_mobile_unionpay_card"
+                android:textColor="@color/edit_text_color"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/llPhoneView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTitle"
+                android:background="@drawable/bg_action_outlined_gray"
+                android:layout_marginTop="16dp"
+                android:padding="16dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/etCountryCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="20dp"
+                    android:background="@android:color/transparent"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:maxLength="4"
+                    android:text="+88"
+                    android:textSize="18sp">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/etMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/ssl_enter_mobile_number"
+                    android:background="@android:color/transparent"
+                    android:layout_gravity="center_vertical"
+                    android:imeOptions="actionDone"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:maxLength="16"
+                    android:layout_marginStart="16dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llPhoneView"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/buttonExit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:text="@string/cancel"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimarySSL" />
+
+                <TextView
+                    android:id="@+id/buttonOk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:gravity="right"
+                    android:text="@string/get_otp"
+                    android:textSize="16sp"
+                    android:background="@drawable/custom_btn_polo_blue_sslc"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+</LinearLayout>

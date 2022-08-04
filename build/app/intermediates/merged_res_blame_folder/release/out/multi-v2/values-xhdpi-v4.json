@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\redspot\\wawoo\\app\\build\\app\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-xhdpi-v4\\values-xhdpi-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Red Spot\\.gradle\\caches\\transforms-2\\files-2.1\\503b3e2c33807ac8b041958f87b166c4\\jetified-sslcommerzlibrary\\res\\values-xhdpi-v4\\values-xhdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "43",
+                        "endOffsets": "94"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "112",
+                        "endColumns": "43",
+                        "endOffsets": "151"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Red Spot\\.gradle\\caches\\transforms-2\\files-2.1\\97e5ae2e433eebb3ec5d92f1878060e5\\jetified-payments-core-20.1.0\\res\\values-xhdpi-v4\\values-xhdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "56",
+                        "endOffsets": "107"
+                    }
+                }
+            ]
+        }
+    ]
+}

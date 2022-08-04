@@ -1,0 +1,55 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\redspot\\wawoo\\app\\build\\app\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-hdpi-v4\\values-hdpi-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Red Spot\\.gradle\\caches\\transforms-2\\files-2.1\\97e5ae2e433eebb3ec5d92f1878060e5\\jetified-payments-core-20.1.0\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "56",
+                        "endOffsets": "107"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Red Spot\\.gradle\\caches\\transforms-2\\files-2.1\\503b3e2c33807ac8b041958f87b166c4\\jetified-sslcommerzlibrary\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,99,151,206,257,307",
+                        "endColumns": "43,51,54,50,49,51",
+                        "endOffsets": "94,146,201,252,302,354"
+                    },
+                    "to": {
+                        "startLines": "3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "112,156,208,263,314,364",
+                        "endColumns": "43,51,54,50,49,51",
+                        "endOffsets": "151,203,258,309,359,411"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Red Spot\\.gradle\\caches\\transforms-2\\files-2.1\\384a6d4b254b6fce522b213185fd440e\\appcompat-1.4.1\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    },
+                    "to": {
+                        "startLines": "9",
+                        "startColumns": "4",
+                        "startOffsets": "416",
+                        "endLines": "13",
+                        "endColumns": "13",
+                        "endOffsets": "688"
+                    }
+                }
+            ]
+        }
+    ]
+}

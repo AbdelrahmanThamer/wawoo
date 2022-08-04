@@ -1,0 +1,1586 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.akaarit.woogoods"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:4:5-67
+11-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:4:22-64
+12    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+12-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:5:5-79
+12-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:5:22-76
+13
+14    <!-- facebook provider is check -->
+15    <queries>
+15-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:61:5-63:15
+16        <provider android:authorities="com.facebook.katana.provider.PlatformProvider" />
+16-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:62:9-89
+16-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:62:19-86
+17        <!-- Added to check if Chrome is installed for browser-based payment authentication (e.g. 3DS1). -->
+18        <package android:name="com.android.chrome" />
+18-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:13:9-54
+18-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:13:18-51
+19
+20        <intent>
+20-->[com.razorpay:checkout:1.6.19] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\bf94dd8a2faea98c77e8dbdbb4b7460a\jetified-checkout-1.6.19\AndroidManifest.xml:12:9-18:18
+21            <action android:name="android.intent.action.VIEW" />
+21-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:54:17-69
+21-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:54:25-66
+22
+23            <data
+23-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:68:13-45
+24                android:mimeType="*/*"
+25                android:scheme="*" />
+25-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:68:19-42
+26        </intent>
+27        <intent>
+27-->[com.razorpay:checkout:1.6.19] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\bf94dd8a2faea98c77e8dbdbb4b7460a\jetified-checkout-1.6.19\AndroidManifest.xml:19:9-28:18
+28            <action android:name="android.intent.action.VIEW" />
+28-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:54:17-69
+28-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:54:25-66
+29
+30            <category android:name="android.intent.category.BROWSABLE" />
+30-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:57:17-78
+30-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:57:27-75
+31
+32            <data
+32-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:68:13-45
+33                android:host="pay"
+34                android:mimeType="*/*"
+35                android:scheme="upi" />
+35-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:68:19-42
+36        </intent>
+37        <intent>
+37-->[com.razorpay:checkout:1.6.19] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\bf94dd8a2faea98c77e8dbdbb4b7460a\jetified-checkout-1.6.19\AndroidManifest.xml:29:9-31:18
+38            <action android:name="android.intent.action.MAIN" />
+38-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:47:17-68
+38-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:47:25-66
+39        </intent>
+40        <intent>
+40-->[com.razorpay:checkout:1.6.19] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\bf94dd8a2faea98c77e8dbdbb4b7460a\jetified-checkout-1.6.19\AndroidManifest.xml:32:9-36:18
+41            <action android:name="android.intent.action.SEND" />
+41-->[com.razorpay:checkout:1.6.19] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\bf94dd8a2faea98c77e8dbdbb4b7460a\jetified-checkout-1.6.19\AndroidManifest.xml:33:13-65
+41-->[com.razorpay:checkout:1.6.19] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\bf94dd8a2faea98c77e8dbdbb4b7460a\jetified-checkout-1.6.19\AndroidManifest.xml:33:21-62
+42
+43            <data android:mimeType="*/*" />
+43-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:68:13-45
+44        </intent> <!-- Specific apps you interact with, eg: -->
+45        <package android:name="com.paytm.pgsdk.TransactionManager.PAYTM_APP_PACKAGE" />
+45-->[com.paytm.appinvokesdk:appinvokesdk:1.6.10] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\d52711321f0b14e2d3aa616237da4072\jetified-appinvokesdk-1.6.10\AndroidManifest.xml:12:9-88
+45-->[com.paytm.appinvokesdk:appinvokesdk:1.6.10] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\d52711321f0b14e2d3aa616237da4072\jetified-appinvokesdk-1.6.10\AndroidManifest.xml:12:18-85
+46
+47        <intent>
+47-->[com.braintreepayments:browser-switch:1.1.3] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\cb9fe5b0676ffc04f905ec576c0d2080\jetified-browser-switch-1.1.3\AndroidManifest.xml:12:9-18:18
+48            <action android:name="android.intent.action.VIEW" />
+48-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:54:17-69
+48-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:54:25-66
+49
+50            <category android:name="android.intent.category.BROWSABLE" />
+50-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:57:17-78
+50-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:57:27-75
+51
+52            <data android:scheme="https" />
+52-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:68:13-45
+52-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:68:19-42
+53        </intent> <!-- Needs to be explicitly declared on Android R+ -->
+54        <package android:name="com.google.android.apps.maps" />
+54-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\df15f9c936b7e07509b9b7df50ae5bd0\jetified-play-services-maps-18.0.2\AndroidManifest.xml:33:9-64
+54-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\df15f9c936b7e07509b9b7df50ae5bd0\jetified-play-services-maps-18.0.2\AndroidManifest.xml:33:18-61
+55    </queries>
+56    <!-- gmail provider is check -->
+57    <queries>
+57-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:61:5-63:15
+58        <intent>
+58-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:66:9-69:18
+59            <action android:name="android.intent.action.SENDTO" />
+59-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:67:13-67
+59-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:67:21-64
+60
+61            <data android:scheme="mailto" />
+61-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:68:13-45
+61-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:68:19-42
+62        </intent>
+63    </queries>
+64
+65    <uses-permission android:name="android.permission.WAKE_LOCK" />
+65-->[:firebase_messaging] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\firebase_messaging-11.4.0\android\build\intermediates\library_manifest\release\AndroidManifest.xml:8:5-68
+65-->[:firebase_messaging] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\firebase_messaging-11.4.0\android\build\intermediates\library_manifest\release\AndroidManifest.xml:8:22-65
+66    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+66-->[:firebase_messaging] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\firebase_messaging-11.4.0\android\build\intermediates\library_manifest\release\AndroidManifest.xml:9:5-79
+66-->[:firebase_messaging] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\firebase_messaging-11.4.0\android\build\intermediates\library_manifest\release\AndroidManifest.xml:9:22-76
+67    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+67-->[:webview_flutter_x5] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\webview_flutter_x5-2.0.8+9\android\build\intermediates\library_manifest\release\AndroidManifest.xml:8:5-81
+67-->[:webview_flutter_x5] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\webview_flutter_x5-2.0.8+9\android\build\intermediates\library_manifest\release\AndroidManifest.xml:8:22-78
+68    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+68-->[:webview_flutter_x5] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\webview_flutter_x5-2.0.8+9\android\build\intermediates\library_manifest\release\AndroidManifest.xml:10:5-76
+68-->[:webview_flutter_x5] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\webview_flutter_x5-2.0.8+9\android\build\intermediates\library_manifest\release\AndroidManifest.xml:10:22-73
+69    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- Create a unique permission for your app and use it so only your app can receive your OneSignal messages. -->
+70    <permission
+70-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:7:5-9:47
+71        android:name="com.akaarit.woogoods.permission.C2D_MESSAGE"
+71-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:8:9-63
+72        android:protectionLevel="signature" />
+72-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:9:9-44
+73
+74    <uses-permission android:name="com.akaarit.woogoods.permission.C2D_MESSAGE" /> <!-- c2dm RECEIVE are basic requirements for push messages through Google's FCM -->
+74-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:11:5-79
+74-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:11:22-76
+75    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+75-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:17:5-82
+75-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:17:22-79
+76    <!--
+77 Required so the device vibrates on receiving a push notification.
+78         Vibration settings of the device still apply.
+79    -->
+80    <uses-permission android:name="android.permission.VIBRATE" />
+80-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:23:5-66
+80-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:23:22-63
+81    <!--
+82 Use to restore notifications the user hasn't interacted with.
+83         They could be missed notifications if the user reboots their device if this isn't in place.
+84    -->
+85    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- START: ShortcutBadger -->
+85-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:29:5-81
+85-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:29:22-78
+86    <!-- Samsung -->
+87    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+87-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:31:5-86
+87-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:31:22-83
+88    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- HTC -->
+88-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:32:5-87
+88-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:32:22-84
+89    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+89-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:33:5-81
+89-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:33:22-78
+90    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- Sony -->
+90-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:34:5-83
+90-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:34:22-80
+91    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+91-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:35:5-88
+91-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:35:22-85
+92    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- Apex -->
+92-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:36:5-92
+92-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:36:22-89
+93    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- Solid -->
+93-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:37:5-84
+93-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:37:22-81
+94    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- Huawei -->
+94-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:38:5-83
+94-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:38:22-80
+95    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+95-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:39:5-91
+95-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:39:22-88
+96    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+96-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:40:5-92
+96-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:40:22-89
+97    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- ZUK -->
+97-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:41:5-93
+97-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:41:22-90
+98    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- OPPO -->
+98-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:42:5-73
+98-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:42:22-70
+99    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+99-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:43:5-82
+99-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:43:22-79
+100    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- EvMe -->
+100-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:44:5-83
+100-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:44:22-80
+101    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+101-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:45:5-88
+101-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:45:22-85
+102    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+102-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:46:5-89
+102-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:46:22-86
+103    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+103-->[com.paytm.easypay:easypay-appinvoke:1.7.4] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\86ce3bdbb36d240cef9c52bb5307e5ee\jetified-easypay-appinvoke-1.7.4\AndroidManifest.xml:10:5-75
+103-->[com.paytm.easypay:easypay-appinvoke:1.7.4] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\86ce3bdbb36d240cef9c52bb5307e5ee\jetified-easypay-appinvoke-1.7.4\AndroidManifest.xml:10:22-72
+104    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+104-->[com.google.android.gms:play-services-measurement-api:21.0.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\3eb59c27fab293be1f95c847f7eed603\jetified-play-services-measurement-api-21.0.0\AndroidManifest.xml:25:5-79
+104-->[com.google.android.gms:play-services-measurement-api:21.0.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\3eb59c27fab293be1f95c847f7eed603\jetified-play-services-measurement-api-21.0.0\AndroidManifest.xml:25:22-76
+105    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+105-->[com.google.android.gms:play-services-measurement:21.0.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\d60c8179fb7c7a0adeecf2ebef988687\jetified-play-services-measurement-21.0.0\AndroidManifest.xml:26:5-110
+105-->[com.google.android.gms:play-services-measurement:21.0.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\d60c8179fb7c7a0adeecf2ebef988687\jetified-play-services-measurement-21.0.0\AndroidManifest.xml:26:22-107
+106
+107    <uses-feature
+107-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\df15f9c936b7e07509b9b7df50ae5bd0\jetified-play-services-maps-18.0.2\AndroidManifest.xml:26:5-28:35
+108        android:glEsVersion="0x00020000"
+108-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\df15f9c936b7e07509b9b7df50ae5bd0\jetified-play-services-maps-18.0.2\AndroidManifest.xml:27:9-41
+109        android:required="true" />
+109-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\df15f9c936b7e07509b9b7df50ae5bd0\jetified-play-services-maps-18.0.2\AndroidManifest.xml:28:9-32
+110
+111    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- <uses-permission android:name="android.permission.NFC" /> -->
+111-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:28:5-77
+111-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:28:22-74
+112    <!-- <uses-permission android:name="android.permission.ACCESS_ALL_DOWNLOADS" /> -->
+113    <supports-screens
+113-->[:sslcommerzlibrary:] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\503b3e2c33807ac8b041958f87b166c4\jetified-sslcommerzlibrary\AndroidManifest.xml:14:5-18:39
+114        android:anyDensity="true"
+114-->[:sslcommerzlibrary:] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\503b3e2c33807ac8b041958f87b166c4\jetified-sslcommerzlibrary\AndroidManifest.xml:15:9-34
+115        android:largeScreens="true"
+115-->[:sslcommerzlibrary:] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\503b3e2c33807ac8b041958f87b166c4\jetified-sslcommerzlibrary\AndroidManifest.xml:16:9-36
+116        android:normalScreens="true"
+116-->[:sslcommerzlibrary:] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\503b3e2c33807ac8b041958f87b166c4\jetified-sslcommerzlibrary\AndroidManifest.xml:17:9-37
+117        android:smallScreens="true" />
+117-->[:sslcommerzlibrary:] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\503b3e2c33807ac8b041958f87b166c4\jetified-sslcommerzlibrary\AndroidManifest.xml:18:9-36
+118
+119    <application
+119-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:6:5-58:19
+120        android:allowBackup="true"
+120-->[:sslcommerzlibrary:] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\503b3e2c33807ac8b041958f87b166c4\jetified-sslcommerzlibrary\AndroidManifest.xml:21:9-35
+121        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+121-->[androidx.core:core:1.8.0-alpha07] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\8e6aac9d60ea3ea74b82d77d815f2977\core-1.8.0-alpha07\AndroidManifest.xml:24:18-86
+122        android:icon="@mipmap/ic_launcher"
+122-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:10:9-43
+123        android:label="woogoods"
+123-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:9:9-33
+124        android:largeHeap="true"
+124-->[:sslcommerzlibrary:] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\503b3e2c33807ac8b041958f87b166c4\jetified-sslcommerzlibrary\AndroidManifest.xml:22:9-33
+125        android:supportsRtl="true"
+125-->[com.braintreepayments.api:drop-in:5.2.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\0fca14eb8ffa6d5caa7f2d875fce02cd\jetified-drop-in-5.2.1\AndroidManifest.xml:16:9-35
+126        android:usesCleartextTraffic="true" >
+126-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:8:9-44
+127
+128        <!-- facebook auth -->
+129        <meta-data
+129-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:13:9-15:55
+130            android:name="com.facebook.sdk.ApplicationId"
+130-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:14:13-58
+131            android:value="@string/facebook_app_id" />
+131-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:15:13-52
+132        <meta-data
+132-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:16:9-18:60
+133            android:name="com.facebook.sdk.ClientToken"
+133-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:17:13-56
+134            android:value="@string/facebook_client_token" />
+134-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:18:13-58
+135        <!-- end facebook auth -->
+136
+137        <activity
+137-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:21:9-50:20
+138            android:name="com.akaarit.woogoods.MainActivity"
+138-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:22:13-41
+139            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+139-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:25:13-163
+140            android:exported="true"
+140-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:27:13-36
+141            android:hardwareAccelerated="true"
+141-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:26:13-47
+142            android:launchMode="singleTop"
+142-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:23:13-43
+143            android:theme="@style/LaunchTheme"
+143-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:24:13-47
+144            android:windowSoftInputMode="adjustResize" >
+144-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:28:13-55
+145
+146            <!--
+147                 Specifies an Android theme to apply to this Activity as soon as
+148                 the Android process has started. This theme is visible to the user
+149                 while the Flutter UI initializes. After that, this theme continues
+150                 to determine the Window background behind the Flutter UI.
+151            -->
+152            <meta-data
+152-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:33:13-36:17
+153                android:name="io.flutter.embedding.android.NormalTheme"
+153-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:34:15-70
+154                android:resource="@style/NormalTheme" />
+154-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:35:15-52
+155            <!--
+156                 Displays an Android View that continues showing the launch screen
+157                 Drawable until Flutter paints its first frame, then this splash
+158                 screen fades out. A splash screen is useful to avoid any visual
+159                 gap between the end of Android's launch screen and the painting of
+160                 Flutter's first frame.
+161            -->
+162            <meta-data
+162-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:42:13-45:17
+163                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+163-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:43:15-79
+164                android:resource="@drawable/launch_background" />
+164-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:44:15-61
+165
+166            <intent-filter>
+166-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:46:13-49:29
+167                <action android:name="android.intent.action.MAIN" />
+167-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:47:17-68
+167-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:47:25-66
+168
+169                <category android:name="android.intent.category.LAUNCHER" />
+169-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:48:17-76
+169-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:48:27-74
+170            </intent-filter>
+171        </activity>
+172        <!--
+173             Don't delete the meta-data below.
+174             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+175        -->
+176        <meta-data
+176-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:53:9-55:33
+177            android:name="flutterEmbedding"
+177-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:54:13-44
+178            android:value="2" />
+178-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:55:13-30
+179        <meta-data
+179-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:56:9-57:70
+180            android:name="com.google.android.geo.API_KEY"
+180-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:56:20-65
+181            android:value="AIzaSyDJu-xdHXPpyEE-MhyXUdwJIXRBO4pY2b8" />
+181-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:57:13-68
+182
+183        <activity
+183-->[:flutter_paystack] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\flutter_paystack-1.0.5+1\android\build\intermediates\library_manifest\release\AndroidManifest.xml:10:9-12:54
+184            android:name="co.paystack.flutterpaystack.AuthActivity"
+184-->[:flutter_paystack] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\flutter_paystack-1.0.5+1\android\build\intermediates\library_manifest\release\AndroidManifest.xml:11:13-68
+185            android:theme="@style/Paystack.Dialog" />
+185-->[:flutter_paystack] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\flutter_paystack-1.0.5+1\android\build\intermediates\library_manifest\release\AndroidManifest.xml:12:13-51
+186
+187        <service
+187-->[:firebase_messaging] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\firebase_messaging-11.4.0\android\build\intermediates\library_manifest\release\AndroidManifest.xml:12:9-15:72
+188            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
+188-->[:firebase_messaging] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\firebase_messaging-11.4.0\android\build\intermediates\library_manifest\release\AndroidManifest.xml:13:13-107
+189            android:exported="false"
+189-->[:firebase_messaging] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\firebase_messaging-11.4.0\android\build\intermediates\library_manifest\release\AndroidManifest.xml:14:13-37
+190            android:permission="android.permission.BIND_JOB_SERVICE" />
+190-->[:firebase_messaging] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\firebase_messaging-11.4.0\android\build\intermediates\library_manifest\release\AndroidManifest.xml:15:13-69
+191        <service
+191-->[:firebase_messaging] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\firebase_messaging-11.4.0\android\build\intermediates\library_manifest\release\AndroidManifest.xml:16:9-22:19
+192            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
+192-->[:firebase_messaging] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\firebase_messaging-11.4.0\android\build\intermediates\library_manifest\release\AndroidManifest.xml:17:13-97
+193            android:exported="false" >
+193-->[:firebase_messaging] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\firebase_messaging-11.4.0\android\build\intermediates\library_manifest\release\AndroidManifest.xml:18:13-37
+194            <intent-filter>
+194-->[:firebase_messaging] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\firebase_messaging-11.4.0\android\build\intermediates\library_manifest\release\AndroidManifest.xml:19:13-21:29
+195                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+195-->[:firebase_messaging] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\firebase_messaging-11.4.0\android\build\intermediates\library_manifest\release\AndroidManifest.xml:20:17-78
+195-->[:firebase_messaging] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\firebase_messaging-11.4.0\android\build\intermediates\library_manifest\release\AndroidManifest.xml:20:25-75
+196            </intent-filter>
+197        </service>
+198
+199        <receiver
+199-->[:firebase_messaging] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\firebase_messaging-11.4.0\android\build\intermediates\library_manifest\release\AndroidManifest.xml:24:9-31:20
+200            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
+200-->[:firebase_messaging] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\firebase_messaging-11.4.0\android\build\intermediates\library_manifest\release\AndroidManifest.xml:25:13-98
+201            android:exported="true"
+201-->[:firebase_messaging] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\firebase_messaging-11.4.0\android\build\intermediates\library_manifest\release\AndroidManifest.xml:26:13-36
+202            android:permission="com.google.android.c2dm.permission.SEND" >
+202-->[:firebase_messaging] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\firebase_messaging-11.4.0\android\build\intermediates\library_manifest\release\AndroidManifest.xml:27:13-73
+203            <intent-filter>
+203-->[:firebase_messaging] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\firebase_messaging-11.4.0\android\build\intermediates\library_manifest\release\AndroidManifest.xml:28:13-30:29
+204                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+204-->[:firebase_messaging] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\firebase_messaging-11.4.0\android\build\intermediates\library_manifest\release\AndroidManifest.xml:29:17-81
+204-->[:firebase_messaging] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\firebase_messaging-11.4.0\android\build\intermediates\library_manifest\release\AndroidManifest.xml:29:25-78
+205            </intent-filter>
+206        </receiver>
+207
+208        <service
+208-->[:firebase_messaging] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\firebase_messaging-11.4.0\android\build\intermediates\library_manifest\release\AndroidManifest.xml:33:9-37:19
+209            android:name="com.google.firebase.components.ComponentDiscoveryService"
+209-->[:firebase_messaging] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\firebase_messaging-11.4.0\android\build\intermediates\library_manifest\release\AndroidManifest.xml:33:18-89
+210            android:directBootAware="true"
+210-->[com.google.firebase:firebase-common:20.1.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\2416f120ac781821a98feb6e9194e5c9\jetified-firebase-common-20.1.1\AndroidManifest.xml:35:13-43
+211            android:exported="false" >
+211-->[com.google.firebase:firebase-messaging:23.0.4] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\6427a8cdc0b04aad5e583f179c76f052\jetified-firebase-messaging-23.0.4\AndroidManifest.xml:54:13-37
+212            <meta-data
+212-->[:firebase_messaging] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\firebase_messaging-11.4.0\android\build\intermediates\library_manifest\release\AndroidManifest.xml:34:13-36:85
+213                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
+213-->[:firebase_messaging] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\firebase_messaging-11.4.0\android\build\intermediates\library_manifest\release\AndroidManifest.xml:35:17-128
+214                android:value="com.google.firebase.components.ComponentRegistrar" />
+214-->[:firebase_messaging] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\firebase_messaging-11.4.0\android\build\intermediates\library_manifest\release\AndroidManifest.xml:36:17-82
+215            <meta-data
+215-->[:firebase_core] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\firebase_core-1.17.0\android\build\intermediates\library_manifest\release\AndroidManifest.xml:9:13-11:85
+216                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+216-->[:firebase_core] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\firebase_core-1.17.0\android\build\intermediates\library_manifest\release\AndroidManifest.xml:10:17-124
+217                android:value="com.google.firebase.components.ComponentRegistrar" />
+217-->[:firebase_core] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\firebase_core-1.17.0\android\build\intermediates\library_manifest\release\AndroidManifest.xml:11:17-82
+218            <meta-data
+218-->[com.google.firebase:firebase-messaging:23.0.4] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\6427a8cdc0b04aad5e583f179c76f052\jetified-firebase-messaging-23.0.4\AndroidManifest.xml:55:13-57:85
+219                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+219-->[com.google.firebase:firebase-messaging:23.0.4] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\6427a8cdc0b04aad5e583f179c76f052\jetified-firebase-messaging-23.0.4\AndroidManifest.xml:56:17-119
+220                android:value="com.google.firebase.components.ComponentRegistrar" />
+220-->[com.google.firebase:firebase-messaging:23.0.4] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\6427a8cdc0b04aad5e583f179c76f052\jetified-firebase-messaging-23.0.4\AndroidManifest.xml:57:17-82
+221            <meta-data
+221-->[com.google.android.gms:play-services-measurement-api:21.0.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\3eb59c27fab293be1f95c847f7eed603\jetified-play-services-measurement-api-21.0.0\AndroidManifest.xml:31:13-33:85
+222                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+222-->[com.google.android.gms:play-services-measurement-api:21.0.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\3eb59c27fab293be1f95c847f7eed603\jetified-play-services-measurement-api-21.0.0\AndroidManifest.xml:32:17-139
+223                android:value="com.google.firebase.components.ComponentRegistrar" />
+223-->[com.google.android.gms:play-services-measurement-api:21.0.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\3eb59c27fab293be1f95c847f7eed603\jetified-play-services-measurement-api-21.0.0\AndroidManifest.xml:33:17-82
+224            <meta-data
+224-->[com.google.firebase:firebase-datatransport:18.1.3] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\a8444648437553791c706b5119ab181a\jetified-firebase-datatransport-18.1.3\AndroidManifest.xml:28:13-30:85
+225                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+225-->[com.google.firebase:firebase-datatransport:18.1.3] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\a8444648437553791c706b5119ab181a\jetified-firebase-datatransport-18.1.3\AndroidManifest.xml:29:17-115
+226                android:value="com.google.firebase.components.ComponentRegistrar" />
+226-->[com.google.firebase:firebase-datatransport:18.1.3] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\a8444648437553791c706b5119ab181a\jetified-firebase-datatransport-18.1.3\AndroidManifest.xml:30:17-82
+227            <meta-data
+227-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\fb250cf91a1b8a1d75b7b283539c4ab0\jetified-firebase-installations-17.0.1\AndroidManifest.xml:18:13-20:85
+228                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+228-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\fb250cf91a1b8a1d75b7b283539c4ab0\jetified-firebase-installations-17.0.1\AndroidManifest.xml:19:17-127
+229                android:value="com.google.firebase.components.ComponentRegistrar" />
+229-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\fb250cf91a1b8a1d75b7b283539c4ab0\jetified-firebase-installations-17.0.1\AndroidManifest.xml:20:17-82
+230        </service>
+231
+232        <provider
+232-->[:firebase_messaging] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\firebase_messaging-11.4.0\android\build\intermediates\library_manifest\release\AndroidManifest.xml:39:9-43:38
+233            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
+233-->[:firebase_messaging] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\firebase_messaging-11.4.0\android\build\intermediates\library_manifest\release\AndroidManifest.xml:40:13-102
+234            android:authorities="com.akaarit.woogoods.flutterfirebasemessaginginitprovider"
+234-->[:firebase_messaging] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\firebase_messaging-11.4.0\android\build\intermediates\library_manifest\release\AndroidManifest.xml:41:13-88
+235            android:exported="false"
+235-->[:firebase_messaging] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\firebase_messaging-11.4.0\android\build\intermediates\library_manifest\release\AndroidManifest.xml:42:13-37
+236            android:initOrder="99" />
+236-->[:firebase_messaging] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\firebase_messaging-11.4.0\android\build\intermediates\library_manifest\release\AndroidManifest.xml:43:13-35
+237
+238        <activity
+238-->[:flutter_braintree] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\flutter_braintree-2.3.1\android\build\intermediates\library_manifest\release\AndroidManifest.xml:8:9-11:20
+239            android:name="com.example.flutter_braintree.FlutterBraintreeCustom"
+239-->[:flutter_braintree] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\flutter_braintree-2.3.1\android\build\intermediates\library_manifest\release\AndroidManifest.xml:9:13-80
+240            android:theme="@style/bt_transparent_activity" >
+240-->[:flutter_braintree] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\flutter_braintree-2.3.1\android\build\intermediates\library_manifest\release\AndroidManifest.xml:10:13-59
+241        </activity>
+242
+243        <provider
+243-->[:image_picker_android] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\image_picker_android-0.8.4+13\android\build\intermediates\library_manifest\release\AndroidManifest.xml:8:9-16:20
+244            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+244-->[:image_picker_android] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\image_picker_android-0.8.4+13\android\build\intermediates\library_manifest\release\AndroidManifest.xml:9:13-82
+245            android:authorities="com.akaarit.woogoods.flutter.image_provider"
+245-->[:image_picker_android] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\image_picker_android-0.8.4+13\android\build\intermediates\library_manifest\release\AndroidManifest.xml:10:13-74
+246            android:exported="false"
+246-->[:image_picker_android] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\image_picker_android-0.8.4+13\android\build\intermediates\library_manifest\release\AndroidManifest.xml:11:13-37
+247            android:grantUriPermissions="true" >
+247-->[:image_picker_android] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\image_picker_android-0.8.4+13\android\build\intermediates\library_manifest\release\AndroidManifest.xml:12:13-47
+248            <meta-data
+248-->[:image_picker_android] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\image_picker_android-0.8.4+13\android\build\intermediates\library_manifest\release\AndroidManifest.xml:13:13-15:75
+249                android:name="android.support.FILE_PROVIDER_PATHS"
+249-->[:image_picker_android] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\image_picker_android-0.8.4+13\android\build\intermediates\library_manifest\release\AndroidManifest.xml:14:17-67
+250                android:resource="@xml/flutter_image_picker_file_paths" />
+250-->[:image_picker_android] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\image_picker_android-0.8.4+13\android\build\intermediates\library_manifest\release\AndroidManifest.xml:15:17-72
+251        </provider>
+252
+253        <activity
+253-->[:url_launcher_android] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\url_launcher_android-6.0.17\android\build\intermediates\library_manifest\release\AndroidManifest.xml:8:9-11:74
+254            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+254-->[:url_launcher_android] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\url_launcher_android-6.0.17\android\build\intermediates\library_manifest\release\AndroidManifest.xml:9:13-74
+255            android:exported="false"
+255-->[:url_launcher_android] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\url_launcher_android-6.0.17\android\build\intermediates\library_manifest\release\AndroidManifest.xml:10:13-37
+256            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+256-->[:url_launcher_android] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\url_launcher_android-6.0.17\android\build\intermediates\library_manifest\release\AndroidManifest.xml:11:13-71
+257
+258        <provider
+258-->[:share_plus] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\share_plus-3.1.0\android\build\intermediates\library_manifest\release\AndroidManifest.xml:8:9-16:20
+259            android:name="dev.fluttercommunity.plus.share.ShareFileProvider"
+259-->[:share_plus] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\share_plus-3.1.0\android\build\intermediates\library_manifest\release\AndroidManifest.xml:9:13-77
+260            android:authorities="com.akaarit.woogoods.flutter.share_provider"
+260-->[:share_plus] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\share_plus-3.1.0\android\build\intermediates\library_manifest\release\AndroidManifest.xml:10:13-74
+261            android:exported="false"
+261-->[:share_plus] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\share_plus-3.1.0\android\build\intermediates\library_manifest\release\AndroidManifest.xml:11:13-37
+262            android:grantUriPermissions="true" >
+262-->[:share_plus] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\share_plus-3.1.0\android\build\intermediates\library_manifest\release\AndroidManifest.xml:12:13-47
+263            <meta-data
+263-->[:image_picker_android] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\image_picker_android-0.8.4+13\android\build\intermediates\library_manifest\release\AndroidManifest.xml:13:13-15:75
+264                android:name="android.support.FILE_PROVIDER_PATHS"
+264-->[:image_picker_android] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\image_picker_android-0.8.4+13\android\build\intermediates\library_manifest\release\AndroidManifest.xml:14:17-67
+265                android:resource="@xml/flutter_share_file_paths" />
+265-->[:image_picker_android] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\image_picker_android-0.8.4+13\android\build\intermediates\library_manifest\release\AndroidManifest.xml:15:17-72
+266        </provider>
+267
+268        <service
+268-->[:webview_flutter_x5] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\webview_flutter_x5-2.0.8+9\android\build\intermediates\library_manifest\release\AndroidManifest.xml:14:9-17:41
+269            android:name="com.tencent.smtt.export.external.DexClassLoaderProviderService"
+269-->[:webview_flutter_x5] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\webview_flutter_x5-2.0.8+9\android\build\intermediates\library_manifest\release\AndroidManifest.xml:15:13-90
+270            android:label="dexopt"
+270-->[:webview_flutter_x5] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\webview_flutter_x5-2.0.8+9\android\build\intermediates\library_manifest\release\AndroidManifest.xml:16:13-35
+271            android:process=":dexopt" />
+271-->[:webview_flutter_x5] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\webview_flutter_x5-2.0.8+9\android\build\intermediates\library_manifest\release\AndroidManifest.xml:17:13-38
+272
+273        <provider
+273-->[:webview_flutter_x5] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\webview_flutter_x5-2.0.8+9\android\build\intermediates\library_manifest\release\AndroidManifest.xml:19:9-28:20
+274            android:name="androidx.core.content.FileProvider"
+274-->[:webview_flutter_x5] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\webview_flutter_x5-2.0.8+9\android\build\intermediates\library_manifest\release\AndroidManifest.xml:20:13-62
+275            android:authorities="com.akaarit.woogoods.fileprovider"
+275-->[:webview_flutter_x5] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\webview_flutter_x5-2.0.8+9\android\build\intermediates\library_manifest\release\AndroidManifest.xml:21:13-64
+276            android:exported="false"
+276-->[:webview_flutter_x5] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\webview_flutter_x5-2.0.8+9\android\build\intermediates\library_manifest\release\AndroidManifest.xml:22:13-37
+277            android:grantUriPermissions="true" >
+277-->[:webview_flutter_x5] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\webview_flutter_x5-2.0.8+9\android\build\intermediates\library_manifest\release\AndroidManifest.xml:23:13-47
+278            <meta-data
+278-->[:image_picker_android] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\image_picker_android-0.8.4+13\android\build\intermediates\library_manifest\release\AndroidManifest.xml:13:13-15:75
+279                android:name="android.support.FILE_PROVIDER_PATHS"
+279-->[:image_picker_android] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\image_picker_android-0.8.4+13\android\build\intermediates\library_manifest\release\AndroidManifest.xml:14:17-67
+280                android:resource="@xml/filepaths" />
+280-->[:image_picker_android] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\image_picker_android-0.8.4+13\android\build\intermediates\library_manifest\release\AndroidManifest.xml:15:17-72
+281        </provider>
+282
+283        <activity
+283-->[com.stripe:paymentsheet:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\30d1226ba330b753fe9fe35c5dae1a1e\jetified-paymentsheet-20.1.0\AndroidManifest.xml:10:9-13:69
+284            android:name="com.stripe.android.paymentsheet.PaymentSheetActivity"
+284-->[com.stripe:paymentsheet:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\30d1226ba330b753fe9fe35c5dae1a1e\jetified-paymentsheet-20.1.0\AndroidManifest.xml:11:13-80
+285            android:exported="false"
+285-->[com.stripe:paymentsheet:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\30d1226ba330b753fe9fe35c5dae1a1e\jetified-paymentsheet-20.1.0\AndroidManifest.xml:12:13-37
+286            android:theme="@style/StripePaymentSheetDefaultTheme" />
+286-->[com.stripe:paymentsheet:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\30d1226ba330b753fe9fe35c5dae1a1e\jetified-paymentsheet-20.1.0\AndroidManifest.xml:13:13-66
+287        <activity
+287-->[com.stripe:paymentsheet:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\30d1226ba330b753fe9fe35c5dae1a1e\jetified-paymentsheet-20.1.0\AndroidManifest.xml:14:9-17:69
+288            android:name="com.stripe.android.paymentsheet.PaymentOptionsActivity"
+288-->[com.stripe:paymentsheet:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\30d1226ba330b753fe9fe35c5dae1a1e\jetified-paymentsheet-20.1.0\AndroidManifest.xml:15:13-82
+289            android:exported="false"
+289-->[com.stripe:paymentsheet:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\30d1226ba330b753fe9fe35c5dae1a1e\jetified-paymentsheet-20.1.0\AndroidManifest.xml:16:13-37
+290            android:theme="@style/StripePaymentSheetDefaultTheme" />
+290-->[com.stripe:paymentsheet:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\30d1226ba330b753fe9fe35c5dae1a1e\jetified-paymentsheet-20.1.0\AndroidManifest.xml:17:13-66
+291        <activity
+291-->[com.stripe:link:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\d576a38f2ab30d1c84d9c0332e4f5ffb\jetified-link-20.1.0\AndroidManifest.xml:10:9-13:44
+292            android:name="com.stripe.android.link.LinkActivity"
+292-->[com.stripe:link:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\d576a38f2ab30d1c84d9c0332e4f5ffb\jetified-link-20.1.0\AndroidManifest.xml:11:13-64
+293            android:exported="false"
+293-->[com.stripe:link:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\d576a38f2ab30d1c84d9c0332e4f5ffb\jetified-link-20.1.0\AndroidManifest.xml:12:13-37
+294            android:label="@string/link" />
+294-->[com.stripe:link:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\d576a38f2ab30d1c84d9c0332e4f5ffb\jetified-link-20.1.0\AndroidManifest.xml:13:13-41
+295        <activity
+295-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:17:9-20:57
+296            android:name="com.stripe.android.view.AddPaymentMethodActivity"
+296-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:18:13-76
+297            android:exported="false"
+297-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:19:13-37
+298            android:theme="@style/StripeDefaultTheme" />
+298-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:20:13-54
+299        <activity
+299-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:21:9-24:57
+300            android:name="com.stripe.android.view.PaymentMethodsActivity"
+300-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:22:13-74
+301            android:exported="false"
+301-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:23:13-37
+302            android:theme="@style/StripeDefaultTheme" />
+302-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:24:13-54
+303        <activity
+303-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:25:9-28:57
+304            android:name="com.stripe.android.view.PaymentFlowActivity"
+304-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:26:13-71
+305            android:exported="false"
+305-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:27:13-37
+306            android:theme="@style/StripeDefaultTheme" />
+306-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:28:13-54
+307        <activity
+307-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:29:9-33:58
+308            android:name="com.stripe.android.view.PaymentAuthWebViewActivity"
+308-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:30:13-78
+309            android:exported="false"
+309-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:31:13-37
+310            android:theme="@style/StripeDefaultTheme"
+310-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:32:13-54
+311            android:windowSoftInputMode="adjustResize" />
+311-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:33:13-55
+312        <activity
+312-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:34:9-37:61
+313            android:name="com.stripe.android.view.PaymentRelayActivity"
+313-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:35:13-72
+314            android:exported="false"
+314-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:36:13-37
+315            android:theme="@style/StripeTransparentTheme" />
+315-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:37:13-58
+316        <!--
+317        Set android:launchMode="singleTop" so that the StripeBrowserLauncherActivity instance that
+318        launched the browser Activity will also handle the return URL deep link.
+319        -->
+320        <activity
+320-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:43:9-47:61
+321            android:name="com.stripe.android.payments.StripeBrowserLauncherActivity"
+321-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:44:13-85
+322            android:exported="false"
+322-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:45:13-37
+323            android:launchMode="singleTask"
+323-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:46:13-44
+324            android:theme="@style/StripeTransparentTheme" />
+324-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:47:13-58
+325        <activity
+325-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:48:9-65:20
+326            android:name="com.stripe.android.payments.StripeBrowserProxyReturnActivity"
+326-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:49:13-88
+327            android:exported="true"
+327-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:50:13-36
+328            android:launchMode="singleTask"
+328-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:51:13-44
+329            android:theme="@style/StripeTransparentTheme" >
+329-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:52:13-58
+330            <intent-filter>
+330-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:53:13-64:29
+331                <action android:name="android.intent.action.VIEW" />
+331-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:54:17-69
+331-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:54:25-66
+332
+333                <category android:name="android.intent.category.DEFAULT" />
+333-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:56:17-76
+333-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:56:27-73
+334                <category android:name="android.intent.category.BROWSABLE" />
+334-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:57:17-78
+334-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:57:27-75
+335
+336                <!-- Must match `DefaultReturnUrl#value`. -->
+337                <data
+337-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:68:13-45
+338                    android:host="payment_return_url"
+339                    android:path="/com.akaarit.woogoods"
+340                    android:scheme="stripesdk" />
+340-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:68:19-42
+341            </intent-filter>
+342        </activity>
+343        <activity
+343-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:66:9-69:57
+344            android:name="com.stripe.android.payments.core.authentication.threeds2.Stripe3ds2TransactionActivity"
+344-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:67:13-114
+345            android:exported="false"
+345-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:68:13-37
+346            android:theme="@style/StripeDefaultTheme" />
+346-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:69:13-54
+347        <activity
+347-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:70:9-73:66
+348            android:name="com.stripe.android.googlepaylauncher.StripeGooglePayActivity"
+348-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:71:13-88
+349            android:exported="false"
+349-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:72:13-37
+350            android:theme="@style/StripeGooglePayDefaultTheme" />
+350-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:73:13-63
+351        <activity
+351-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:74:9-77:66
+352            android:name="com.stripe.android.googlepaylauncher.GooglePayLauncherActivity"
+352-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:75:13-90
+353            android:exported="false"
+353-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:76:13-37
+354            android:theme="@style/StripeGooglePayDefaultTheme" />
+354-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:77:13-63
+355        <activity
+355-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:78:9-81:66
+356            android:name="com.stripe.android.googlepaylauncher.GooglePayPaymentMethodLauncherActivity"
+356-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:79:13-103
+357            android:exported="false"
+357-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:80:13-37
+358            android:theme="@style/StripeGooglePayDefaultTheme" />
+358-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:81:13-63
+359        <activity
+359-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:82:9-85:62
+360            android:name="com.stripe.android.payments.paymentlauncher.PaymentLauncherConfirmationActivity"
+360-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:83:13-107
+361            android:exported="false"
+361-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:84:13-37
+362            android:theme="@style/PayLauncherDefaultTheme" />
+362-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:85:13-59
+363        <activity
+363-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:86:9-89:61
+364            android:name="com.stripe.android.payments.bankaccount.ui.CollectBankAccountActivity"
+364-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:87:13-97
+365            android:exported="false"
+365-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:88:13-37
+366            android:theme="@style/StripeTransparentTheme" />
+366-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:89:13-58
+367
+368        <uses-library
+368-->[androidx.window:window:1.0.0-beta04] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\dc8b7e598373741c1a34280b898c7be5\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+369            android:name="androidx.window.extensions"
+369-->[androidx.window:window:1.0.0-beta04] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\dc8b7e598373741c1a34280b898c7be5\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+370            android:required="false" />
+370-->[androidx.window:window:1.0.0-beta04] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\dc8b7e598373741c1a34280b898c7be5\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+371        <uses-library
+371-->[androidx.window:window:1.0.0-beta04] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\dc8b7e598373741c1a34280b898c7be5\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+372            android:name="androidx.window.sidecar"
+372-->[androidx.window:window:1.0.0-beta04] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\dc8b7e598373741c1a34280b898c7be5\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+373            android:required="false" />
+373-->[androidx.window:window:1.0.0-beta04] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\dc8b7e598373741c1a34280b898c7be5\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+374
+375        <activity
+375-->[com.stripe:stripe-3ds2-android:6.1.5] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\d685b9e1a181dc2f9c8b12afbf38c910\jetified-stripe-3ds2-android-6.1.5\AndroidManifest.xml:10:9-13:54
+376            android:name="com.stripe.android.stripe3ds2.views.ChallengeActivity"
+376-->[com.stripe:stripe-3ds2-android:6.1.5] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\d685b9e1a181dc2f9c8b12afbf38c910\jetified-stripe-3ds2-android-6.1.5\AndroidManifest.xml:11:13-81
+377            android:exported="false"
+377-->[com.stripe:stripe-3ds2-android:6.1.5] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\d685b9e1a181dc2f9c8b12afbf38c910\jetified-stripe-3ds2-android-6.1.5\AndroidManifest.xml:12:13-37
+378            android:theme="@style/Stripe3DS2Theme" />
+378-->[com.stripe:stripe-3ds2-android:6.1.5] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\d685b9e1a181dc2f9c8b12afbf38c910\jetified-stripe-3ds2-android-6.1.5\AndroidManifest.xml:13:13-51
+379        <activity
+379-->[com.braintreepayments.api:drop-in:5.2.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\0fca14eb8ffa6d5caa7f2d875fce02cd\jetified-drop-in-5.2.1\AndroidManifest.xml:18:9-20:64
+380            android:name="com.braintreepayments.api.dropin.DropInActivity"
+380-->[com.braintreepayments.api:drop-in:5.2.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\0fca14eb8ffa6d5caa7f2d875fce02cd\jetified-drop-in-5.2.1\AndroidManifest.xml:19:13-75
+381            android:theme="@style/bt_drop_in_activity_theme" />
+381-->[com.braintreepayments.api:drop-in:5.2.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\0fca14eb8ffa6d5caa7f2d875fce02cd\jetified-drop-in-5.2.1\AndroidManifest.xml:20:13-61
+382        <activity
+382-->[com.braintreepayments.api:drop-in:5.2.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\0fca14eb8ffa6d5caa7f2d875fce02cd\jetified-drop-in-5.2.1\AndroidManifest.xml:21:9-23:65
+383            android:name="com.braintreepayments.api.dropin.AddCardActivity"
+383-->[com.braintreepayments.api:drop-in:5.2.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\0fca14eb8ffa6d5caa7f2d875fce02cd\jetified-drop-in-5.2.1\AndroidManifest.xml:22:13-76
+384            android:theme="@style/bt_add_card_activity_theme" />
+384-->[com.braintreepayments.api:drop-in:5.2.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\0fca14eb8ffa6d5caa7f2d875fce02cd\jetified-drop-in-5.2.1\AndroidManifest.xml:23:13-62
+385        <activity
+385-->[com.braintreepayments.api:drop-in:5.2.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\0fca14eb8ffa6d5caa7f2d875fce02cd\jetified-drop-in-5.2.1\AndroidManifest.xml:24:9-26:70
+386            android:name="com.braintreepayments.api.dropin.VaultManagerActivity"
+386-->[com.braintreepayments.api:drop-in:5.2.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\0fca14eb8ffa6d5caa7f2d875fce02cd\jetified-drop-in-5.2.1\AndroidManifest.xml:25:13-81
+387            android:theme="@style/bt_vault_manager_activity_theme" />
+387-->[com.braintreepayments.api:drop-in:5.2.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\0fca14eb8ffa6d5caa7f2d875fce02cd\jetified-drop-in-5.2.1\AndroidManifest.xml:26:13-67
+388
+389        <receiver
+389-->[com.razorpay:checkout:1.6.19] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\bf94dd8a2faea98c77e8dbdbb4b7460a\jetified-checkout-1.6.19\AndroidManifest.xml:40:9-46:20
+390            android:name="com.razorpay.RzpTokenReceiver"
+390-->[com.razorpay:checkout:1.6.19] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\bf94dd8a2faea98c77e8dbdbb4b7460a\jetified-checkout-1.6.19\AndroidManifest.xml:41:13-57
+391            android:exported="false" >
+391-->[com.razorpay:checkout:1.6.19] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\bf94dd8a2faea98c77e8dbdbb4b7460a\jetified-checkout-1.6.19\AndroidManifest.xml:42:13-37
+392            <intent-filter>
+392-->[com.razorpay:checkout:1.6.19] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\bf94dd8a2faea98c77e8dbdbb4b7460a\jetified-checkout-1.6.19\AndroidManifest.xml:43:13-45:29
+393                <action android:name="rzp.device_token.share" />
+393-->[com.razorpay:checkout:1.6.19] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\bf94dd8a2faea98c77e8dbdbb4b7460a\jetified-checkout-1.6.19\AndroidManifest.xml:44:17-65
+393-->[com.razorpay:checkout:1.6.19] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\bf94dd8a2faea98c77e8dbdbb4b7460a\jetified-checkout-1.6.19\AndroidManifest.xml:44:25-62
+394            </intent-filter>
+395        </receiver>
+396
+397        <activity
+397-->[com.razorpay:checkout:1.6.19] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\bf94dd8a2faea98c77e8dbdbb4b7460a\jetified-checkout-1.6.19\AndroidManifest.xml:48:9-60:20
+398            android:name="com.razorpay.CheckoutActivity"
+398-->[com.razorpay:checkout:1.6.19] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\bf94dd8a2faea98c77e8dbdbb4b7460a\jetified-checkout-1.6.19\AndroidManifest.xml:49:13-57
+399            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+399-->[com.razorpay:checkout:1.6.19] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\bf94dd8a2faea98c77e8dbdbb4b7460a\jetified-checkout-1.6.19\AndroidManifest.xml:50:13-83
+400            android:exported="true"
+400-->[com.razorpay:checkout:1.6.19] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\bf94dd8a2faea98c77e8dbdbb4b7460a\jetified-checkout-1.6.19\AndroidManifest.xml:51:13-36
+401            android:theme="@style/CheckoutTheme" >
+401-->[com.razorpay:checkout:1.6.19] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\bf94dd8a2faea98c77e8dbdbb4b7460a\jetified-checkout-1.6.19\AndroidManifest.xml:52:13-49
+402            <intent-filter>
+402-->[com.razorpay:checkout:1.6.19] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\bf94dd8a2faea98c77e8dbdbb4b7460a\jetified-checkout-1.6.19\AndroidManifest.xml:53:13-59:29
+403                <action android:name="android.intent.action.MAIN" />
+403-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:47:17-68
+403-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:47:25-66
+404
+405                <data
+405-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:68:13-45
+406                    android:host="rzp.io"
+407                    android:scheme="io.rzp" />
+407-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:68:19-42
+408            </intent-filter>
+409        </activity>
+410
+411        <meta-data
+411-->[com.razorpay:checkout:1.6.19] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\bf94dd8a2faea98c77e8dbdbb4b7460a\jetified-checkout-1.6.19\AndroidManifest.xml:62:9-64:58
+412            android:name="com.razorpay.plugin.googlepay_all"
+412-->[com.razorpay:checkout:1.6.19] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\bf94dd8a2faea98c77e8dbdbb4b7460a\jetified-checkout-1.6.19\AndroidManifest.xml:63:13-61
+413            android:value="com.razorpay.RzpGpayMerged" />
+413-->[com.razorpay:checkout:1.6.19] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\bf94dd8a2faea98c77e8dbdbb4b7460a\jetified-checkout-1.6.19\AndroidManifest.xml:64:13-55
+414
+415        <activity
+415-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\0c9cee9dbd1b7e882bf48960ea01d3a4\jetified-play-services-auth-20.0.1\AndroidManifest.xml:23:9-27:75
+416            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+416-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\0c9cee9dbd1b7e882bf48960ea01d3a4\jetified-play-services-auth-20.0.1\AndroidManifest.xml:24:13-93
+417            android:excludeFromRecents="true"
+417-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\0c9cee9dbd1b7e882bf48960ea01d3a4\jetified-play-services-auth-20.0.1\AndroidManifest.xml:25:13-46
+418            android:exported="false"
+418-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\0c9cee9dbd1b7e882bf48960ea01d3a4\jetified-play-services-auth-20.0.1\AndroidManifest.xml:26:13-37
+419            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+419-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\0c9cee9dbd1b7e882bf48960ea01d3a4\jetified-play-services-auth-20.0.1\AndroidManifest.xml:27:13-72
+420        <!--
+421            Service handling Google Sign-In user revocation. For apps that do not integrate with
+422            Google Sign-In, this service will never be started.
+423        -->
+424        <service
+424-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\0c9cee9dbd1b7e882bf48960ea01d3a4\jetified-play-services-auth-20.0.1\AndroidManifest.xml:33:9-37:51
+425            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+425-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\0c9cee9dbd1b7e882bf48960ea01d3a4\jetified-play-services-auth-20.0.1\AndroidManifest.xml:34:13-89
+426            android:exported="true"
+426-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\0c9cee9dbd1b7e882bf48960ea01d3a4\jetified-play-services-auth-20.0.1\AndroidManifest.xml:35:13-36
+427            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+427-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\0c9cee9dbd1b7e882bf48960ea01d3a4\jetified-play-services-auth-20.0.1\AndroidManifest.xml:36:13-107
+428            android:visibleToInstantApps="true" />
+428-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\0c9cee9dbd1b7e882bf48960ea01d3a4\jetified-play-services-auth-20.0.1\AndroidManifest.xml:37:13-48
+429
+430        <activity
+430-->[com.paytm.appinvokesdk:appinvokesdk:1.6.10] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\d52711321f0b14e2d3aa616237da4072\jetified-appinvokesdk-1.6.10\AndroidManifest.xml:23:9-26:66
+431            android:name="com.paytm.pgsdk.PaytmPGActivity"
+431-->[com.paytm.appinvokesdk:appinvokesdk:1.6.10] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\d52711321f0b14e2d3aa616237da4072\jetified-appinvokesdk-1.6.10\AndroidManifest.xml:24:13-59
+432            android:screenOrientation="portrait"
+432-->[com.paytm.appinvokesdk:appinvokesdk:1.6.10] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\d52711321f0b14e2d3aa616237da4072\jetified-appinvokesdk-1.6.10\AndroidManifest.xml:25:13-49
+433            android:theme="@style/Theme.AppCompat.NoActionBar" />
+433-->[com.paytm.appinvokesdk:appinvokesdk:1.6.10] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\d52711321f0b14e2d3aa616237da4072\jetified-appinvokesdk-1.6.10\AndroidManifest.xml:26:13-63
+434        <activity
+434-->[com.paytm.appinvokesdk:appinvokesdk:1.6.10] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\d52711321f0b14e2d3aa616237da4072\jetified-appinvokesdk-1.6.10\AndroidManifest.xml:27:9-29:63
+435            android:name="com.paytm.pgsdk.AioMatchUserActivity"
+435-->[com.paytm.appinvokesdk:appinvokesdk:1.6.10] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\d52711321f0b14e2d3aa616237da4072\jetified-appinvokesdk-1.6.10\AndroidManifest.xml:28:13-64
+436            android:theme="@style/TransparentActivityTheme" />
+436-->[com.paytm.appinvokesdk:appinvokesdk:1.6.10] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\d52711321f0b14e2d3aa616237da4072\jetified-appinvokesdk-1.6.10\AndroidManifest.xml:29:13-60
+437
+438        <service
+438-->[com.paytm.appinvokesdk:appinvokesdk:1.6.10] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\d52711321f0b14e2d3aa616237da4072\jetified-appinvokesdk-1.6.10\AndroidManifest.xml:31:9-33:40
+439            android:name="com.paytm.pgsdk.IntentServicePostNotification"
+439-->[com.paytm.appinvokesdk:appinvokesdk:1.6.10] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\d52711321f0b14e2d3aa616237da4072\jetified-appinvokesdk-1.6.10\AndroidManifest.xml:32:13-73
+440            android:exported="false" />
+440-->[com.paytm.appinvokesdk:appinvokesdk:1.6.10] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\d52711321f0b14e2d3aa616237da4072\jetified-appinvokesdk-1.6.10\AndroidManifest.xml:33:13-37
+441        <service
+441-->[com.paytm.appinvokesdk:appinvokesdk:1.6.10] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\d52711321f0b14e2d3aa616237da4072\jetified-appinvokesdk-1.6.10\AndroidManifest.xml:34:9-36:40
+442            android:name="com.paytm.pgsdk.IntentServicePreNotification"
+442-->[com.paytm.appinvokesdk:appinvokesdk:1.6.10] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\d52711321f0b14e2d3aa616237da4072\jetified-appinvokesdk-1.6.10\AndroidManifest.xml:35:13-72
+443            android:exported="false" />
+443-->[com.paytm.appinvokesdk:appinvokesdk:1.6.10] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\d52711321f0b14e2d3aa616237da4072\jetified-appinvokesdk-1.6.10\AndroidManifest.xml:36:13-37
+444
+445        <receiver
+445-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:49:9-60:20
+446            android:name="com.onesignal.FCMBroadcastReceiver"
+446-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:50:13-62
+447            android:exported="true"
+447-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:51:13-36
+448            android:permission="com.google.android.c2dm.permission.SEND" >
+448-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:52:13-73
+449
+450            <!-- High priority so OneSignal payloads can be filtered from other FCM receivers -->
+451            <intent-filter android:priority="999" >
+451-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:55:13-59:29
+451-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:55:28-50
+452                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+452-->[:firebase_messaging] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\firebase_messaging-11.4.0\android\build\intermediates\library_manifest\release\AndroidManifest.xml:29:17-81
+452-->[:firebase_messaging] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\firebase_messaging-11.4.0\android\build\intermediates\library_manifest\release\AndroidManifest.xml:29:25-78
+453
+454                <category android:name="com.akaarit.woogoods" />
+454-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:58:17-61
+454-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:58:27-58
+455            </intent-filter>
+456        </receiver>
+457
+458        <service
+458-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:62:9-68:19
+459            android:name="com.onesignal.HmsMessageServiceOneSignal"
+459-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:63:13-68
+460            android:exported="false" >
+460-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:64:13-37
+461            <intent-filter>
+461-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:65:13-67:29
+462                <action android:name="com.huawei.push.action.MESSAGING_EVENT" />
+462-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:66:17-81
+462-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:66:25-78
+463            </intent-filter>
+464        </service>
+465
+466        <activity
+466-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:70:9-78:20
+467            android:name="com.onesignal.NotificationOpenedActivityHMS"
+467-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:71:13-71
+468            android:exported="true"
+468-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:72:13-36
+469            android:noHistory="true"
+469-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:73:13-37
+470            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+470-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:74:13-72
+471            <intent-filter>
+471-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:75:13-77:29
+472                <action android:name="android.intent.action.VIEW" />
+472-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:54:17-69
+472-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:54:25-66
+473            </intent-filter>
+474        </activity>
+475
+476        <service
+476-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:80:9-82:40
+477            android:name="com.onesignal.FCMIntentService"
+477-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:81:13-58
+478            android:exported="false" />
+478-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:82:13-37
+479        <service
+479-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:83:9-86:72
+480            android:name="com.onesignal.FCMIntentJobService"
+480-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:84:13-61
+481            android:exported="false"
+481-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:85:13-37
+482            android:permission="android.permission.BIND_JOB_SERVICE" />
+482-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:86:13-69
+483        <service
+483-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:87:9-90:43
+484            android:name="com.onesignal.SyncService"
+484-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:88:13-53
+485            android:exported="false"
+485-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:89:13-37
+486            android:stopWithTask="true" />
+486-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:90:13-40
+487        <service
+487-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:91:9-94:72
+488            android:name="com.onesignal.SyncJobService"
+488-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:92:13-56
+489            android:exported="false"
+489-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:93:13-37
+490            android:permission="android.permission.BIND_JOB_SERVICE" />
+490-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:94:13-69
+491
+492        <activity
+492-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:96:9-99:75
+493            android:name="com.onesignal.PermissionsActivity"
+493-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:97:13-61
+494            android:exported="false"
+494-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:98:13-37
+495            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+495-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:99:13-72
+496
+497        <receiver
+497-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:101:9-103:39
+498            android:name="com.onesignal.NotificationDismissReceiver"
+498-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:102:13-69
+499            android:exported="true" />
+499-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:103:13-36
+500        <receiver
+500-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:104:9-111:20
+501            android:name="com.onesignal.BootUpReceiver"
+501-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:105:13-56
+502            android:exported="true" >
+502-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:106:13-36
+503            <intent-filter>
+503-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:107:13-110:29
+504                <action android:name="android.intent.action.BOOT_COMPLETED" />
+504-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:108:17-79
+504-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:108:25-76
+505                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+505-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:109:17-82
+505-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:109:25-79
+506            </intent-filter>
+507        </receiver>
+508        <receiver
+508-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:112:9-118:20
+509            android:name="com.onesignal.UpgradeReceiver"
+509-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:113:13-57
+510            android:exported="true" >
+510-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:114:13-36
+511            <intent-filter>
+511-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:115:13-117:29
+512                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+512-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:116:17-84
+512-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:116:25-81
+513            </intent-filter>
+514        </receiver>
+515
+516        <activity
+516-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:120:9-126:75
+517            android:name="com.onesignal.NotificationOpenedReceiver"
+517-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:121:13-68
+518            android:excludeFromRecents="true"
+518-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:122:13-46
+519            android:exported="true"
+519-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:123:13-36
+520            android:noHistory="true"
+520-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:124:13-37
+521            android:taskAffinity=""
+521-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:125:13-36
+522            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+522-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:126:13-72
+523        <activity
+523-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:127:9-132:75
+524            android:name="com.onesignal.NotificationOpenedReceiverAndroid22AndOlder"
+524-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:128:13-85
+525            android:excludeFromRecents="true"
+525-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:129:13-46
+526            android:exported="true"
+526-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:130:13-36
+527            android:noHistory="true"
+527-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:131:13-37
+528            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+528-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:132:13-72
+529
+530        <service android:name="com.braintreepayments.api.internal.AnalyticsIntentService" />
+530-->[com.braintreepayments.api:braintree:3.15.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\70a003ac1a73581f2156a8ad1b84ddf3\jetified-braintree-3.15.0\AndroidManifest.xml:17:9-93
+530-->[com.braintreepayments.api:braintree:3.15.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\70a003ac1a73581f2156a8ad1b84ddf3\jetified-braintree-3.15.0\AndroidManifest.xml:17:18-90
+531
+532        <activity android:name="com.braintreepayments.api.ThreeDSecureActivity" />
+532-->[com.braintreepayments.api:braintree:3.15.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\70a003ac1a73581f2156a8ad1b84ddf3\jetified-braintree-3.15.0\AndroidManifest.xml:19:9-83
+532-->[com.braintreepayments.api:braintree:3.15.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\70a003ac1a73581f2156a8ad1b84ddf3\jetified-braintree-3.15.0\AndroidManifest.xml:19:19-80
+533        <activity
+533-->[com.facebook.android:facebook-common:13.2.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\6a1d56ee34498929cdbc65d0b98b30d1\jetified-facebook-common-13.2.0\AndroidManifest.xml:30:9-33:66
+534            android:name="com.facebook.FacebookActivity"
+534-->[com.facebook.android:facebook-common:13.2.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\6a1d56ee34498929cdbc65d0b98b30d1\jetified-facebook-common-13.2.0\AndroidManifest.xml:31:13-57
+535            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+535-->[com.facebook.android:facebook-common:13.2.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\6a1d56ee34498929cdbc65d0b98b30d1\jetified-facebook-common-13.2.0\AndroidManifest.xml:32:13-96
+536            android:theme="@style/com_facebook_activity_theme" />
+536-->[com.facebook.android:facebook-common:13.2.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\6a1d56ee34498929cdbc65d0b98b30d1\jetified-facebook-common-13.2.0\AndroidManifest.xml:33:13-63
+537        <activity android:name="com.facebook.CustomTabMainActivity" />
+537-->[com.facebook.android:facebook-common:13.2.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\6a1d56ee34498929cdbc65d0b98b30d1\jetified-facebook-common-13.2.0\AndroidManifest.xml:34:9-71
+537-->[com.facebook.android:facebook-common:13.2.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\6a1d56ee34498929cdbc65d0b98b30d1\jetified-facebook-common-13.2.0\AndroidManifest.xml:34:19-68
+538        <activity
+538-->[com.facebook.android:facebook-common:13.2.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\6a1d56ee34498929cdbc65d0b98b30d1\jetified-facebook-common-13.2.0\AndroidManifest.xml:35:9-49:20
+539            android:name="com.facebook.CustomTabActivity"
+539-->[com.facebook.android:facebook-common:13.2.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\6a1d56ee34498929cdbc65d0b98b30d1\jetified-facebook-common-13.2.0\AndroidManifest.xml:36:13-58
+540            android:exported="true" >
+540-->[com.facebook.android:facebook-common:13.2.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\6a1d56ee34498929cdbc65d0b98b30d1\jetified-facebook-common-13.2.0\AndroidManifest.xml:37:13-36
+541            <intent-filter>
+541-->[com.facebook.android:facebook-common:13.2.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\6a1d56ee34498929cdbc65d0b98b30d1\jetified-facebook-common-13.2.0\AndroidManifest.xml:39:13-48:29
+542                <action android:name="android.intent.action.VIEW" />
+542-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:54:17-69
+542-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:54:25-66
+543
+544                <category android:name="android.intent.category.DEFAULT" />
+544-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:56:17-76
+544-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:56:27-73
+545                <category android:name="android.intent.category.BROWSABLE" />
+545-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:57:17-78
+545-->[com.stripe:payments-core:20.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\97e5ae2e433eebb3ec5d92f1878060e5\jetified-payments-core-20.1.0\AndroidManifest.xml:57:27-75
+546
+547                <data
+547-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:68:13-45
+548                    android:host="cct.com.akaarit.woogoods"
+549                    android:scheme="fbconnect" />
+549-->C:\redspot\wawoo\app\android\app\src\main\AndroidManifest.xml:68:19-42
+550            </intent-filter>
+551        </activity>
+552
+553        <service
+553-->[com.paytm.easypay:easypay-appinvoke:1.7.4] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\86ce3bdbb36d240cef9c52bb5307e5ee\jetified-easypay-appinvoke-1.7.4\AndroidManifest.xml:14:9-17:72
+554            android:name="easypay.appinvoke.utils.EasyPayConfigDownloader"
+554-->[com.paytm.easypay:easypay-appinvoke:1.7.4] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\86ce3bdbb36d240cef9c52bb5307e5ee\jetified-easypay-appinvoke-1.7.4\AndroidManifest.xml:15:13-75
+555            android:exported="false"
+555-->[com.paytm.easypay:easypay-appinvoke:1.7.4] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\86ce3bdbb36d240cef9c52bb5307e5ee\jetified-easypay-appinvoke-1.7.4\AndroidManifest.xml:16:13-37
+556            android:permission="android.permission.BIND_JOB_SERVICE" />
+556-->[com.paytm.easypay:easypay-appinvoke:1.7.4] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\86ce3bdbb36d240cef9c52bb5307e5ee\jetified-easypay-appinvoke-1.7.4\AndroidManifest.xml:17:13-69
+557        <service
+557-->[com.paytm.easypay:easypay-appinvoke:1.7.4] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\86ce3bdbb36d240cef9c52bb5307e5ee\jetified-easypay-appinvoke-1.7.4\AndroidManifest.xml:18:9-22:72
+558            android:name="easypay.appinvoke.utils.AnalyticsService"
+558-->[com.paytm.easypay:easypay-appinvoke:1.7.4] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\86ce3bdbb36d240cef9c52bb5307e5ee\jetified-easypay-appinvoke-1.7.4\AndroidManifest.xml:19:13-68
+559            android:enabled="true"
+559-->[com.paytm.easypay:easypay-appinvoke:1.7.4] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\86ce3bdbb36d240cef9c52bb5307e5ee\jetified-easypay-appinvoke-1.7.4\AndroidManifest.xml:20:13-35
+560            android:exported="false"
+560-->[com.paytm.easypay:easypay-appinvoke:1.7.4] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\86ce3bdbb36d240cef9c52bb5307e5ee\jetified-easypay-appinvoke-1.7.4\AndroidManifest.xml:21:13-37
+561            android:permission="android.permission.BIND_JOB_SERVICE" />
+561-->[com.paytm.easypay:easypay-appinvoke:1.7.4] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\86ce3bdbb36d240cef9c52bb5307e5ee\jetified-easypay-appinvoke-1.7.4\AndroidManifest.xml:22:13-69
+562
+563        <activity android:name="easypay.appinvoke.AnalyticsManagerInfoDisplayActivity" />
+563-->[com.paytm.easypay:easypay-appinvoke:1.7.4] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\86ce3bdbb36d240cef9c52bb5307e5ee\jetified-easypay-appinvoke-1.7.4\AndroidManifest.xml:24:9-90
+563-->[com.paytm.easypay:easypay-appinvoke:1.7.4] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\86ce3bdbb36d240cef9c52bb5307e5ee\jetified-easypay-appinvoke-1.7.4\AndroidManifest.xml:24:19-87
+564
+565        <receiver
+565-->[com.google.firebase:firebase-messaging:23.0.4] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\6427a8cdc0b04aad5e583f179c76f052\jetified-firebase-messaging-23.0.4\AndroidManifest.xml:31:9-38:20
+566            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+566-->[com.google.firebase:firebase-messaging:23.0.4] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\6427a8cdc0b04aad5e583f179c76f052\jetified-firebase-messaging-23.0.4\AndroidManifest.xml:32:13-78
+567            android:exported="true"
+567-->[com.google.firebase:firebase-messaging:23.0.4] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\6427a8cdc0b04aad5e583f179c76f052\jetified-firebase-messaging-23.0.4\AndroidManifest.xml:33:13-36
+568            android:permission="com.google.android.c2dm.permission.SEND" >
+568-->[com.google.firebase:firebase-messaging:23.0.4] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\6427a8cdc0b04aad5e583f179c76f052\jetified-firebase-messaging-23.0.4\AndroidManifest.xml:34:13-73
+569            <intent-filter>
+569-->[:firebase_messaging] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\firebase_messaging-11.4.0\android\build\intermediates\library_manifest\release\AndroidManifest.xml:28:13-30:29
+570                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+570-->[:firebase_messaging] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\firebase_messaging-11.4.0\android\build\intermediates\library_manifest\release\AndroidManifest.xml:29:17-81
+570-->[:firebase_messaging] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\firebase_messaging-11.4.0\android\build\intermediates\library_manifest\release\AndroidManifest.xml:29:25-78
+571            </intent-filter>
+572        </receiver>
+573        <!--
+574             FirebaseMessagingService performs security checks at runtime,
+575             but set to not exported to explicitly avoid allowing another app to call it.
+576        -->
+577        <service
+577-->[com.google.firebase:firebase-messaging:23.0.4] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\6427a8cdc0b04aad5e583f179c76f052\jetified-firebase-messaging-23.0.4\AndroidManifest.xml:44:9-51:19
+578            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+578-->[com.google.firebase:firebase-messaging:23.0.4] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\6427a8cdc0b04aad5e583f179c76f052\jetified-firebase-messaging-23.0.4\AndroidManifest.xml:45:13-82
+579            android:directBootAware="true"
+579-->[com.google.firebase:firebase-messaging:23.0.4] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\6427a8cdc0b04aad5e583f179c76f052\jetified-firebase-messaging-23.0.4\AndroidManifest.xml:46:13-43
+580            android:exported="false" >
+580-->[com.google.firebase:firebase-messaging:23.0.4] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\6427a8cdc0b04aad5e583f179c76f052\jetified-firebase-messaging-23.0.4\AndroidManifest.xml:47:13-37
+581            <intent-filter android:priority="-500" >
+581-->[:firebase_messaging] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\firebase_messaging-11.4.0\android\build\intermediates\library_manifest\release\AndroidManifest.xml:19:13-21:29
+582                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+582-->[:firebase_messaging] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\firebase_messaging-11.4.0\android\build\intermediates\library_manifest\release\AndroidManifest.xml:20:17-78
+582-->[:firebase_messaging] C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\firebase_messaging-11.4.0\android\build\intermediates\library_manifest\release\AndroidManifest.xml:20:25-75
+583            </intent-filter>
+584        </service>
+585
+586        <provider
+586-->[com.google.firebase:firebase-common:20.1.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\2416f120ac781821a98feb6e9194e5c9\jetified-firebase-common-20.1.1\AndroidManifest.xml:26:9-31:39
+587            android:name="com.google.firebase.provider.FirebaseInitProvider"
+587-->[com.google.firebase:firebase-common:20.1.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\2416f120ac781821a98feb6e9194e5c9\jetified-firebase-common-20.1.1\AndroidManifest.xml:27:13-77
+588            android:authorities="com.akaarit.woogoods.firebaseinitprovider"
+588-->[com.google.firebase:firebase-common:20.1.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\2416f120ac781821a98feb6e9194e5c9\jetified-firebase-common-20.1.1\AndroidManifest.xml:28:13-72
+589            android:directBootAware="true"
+589-->[com.google.firebase:firebase-common:20.1.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\2416f120ac781821a98feb6e9194e5c9\jetified-firebase-common-20.1.1\AndroidManifest.xml:29:13-43
+590            android:exported="false"
+590-->[com.google.firebase:firebase-common:20.1.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\2416f120ac781821a98feb6e9194e5c9\jetified-firebase-common-20.1.1\AndroidManifest.xml:30:13-37
+591            android:initOrder="100" />
+591-->[com.google.firebase:firebase-common:20.1.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\2416f120ac781821a98feb6e9194e5c9\jetified-firebase-common-20.1.1\AndroidManifest.xml:31:13-36
+592
+593        <receiver
+593-->[com.google.android.gms:play-services-measurement:21.0.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\d60c8179fb7c7a0adeecf2ebef988687\jetified-play-services-measurement-21.0.0\AndroidManifest.xml:29:9-33:20
+594            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+594-->[com.google.android.gms:play-services-measurement:21.0.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\d60c8179fb7c7a0adeecf2ebef988687\jetified-play-services-measurement-21.0.0\AndroidManifest.xml:30:13-85
+595            android:enabled="true"
+595-->[com.google.android.gms:play-services-measurement:21.0.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\d60c8179fb7c7a0adeecf2ebef988687\jetified-play-services-measurement-21.0.0\AndroidManifest.xml:31:13-35
+596            android:exported="false" >
+596-->[com.google.android.gms:play-services-measurement:21.0.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\d60c8179fb7c7a0adeecf2ebef988687\jetified-play-services-measurement-21.0.0\AndroidManifest.xml:32:13-37
+597        </receiver>
+598
+599        <service
+599-->[com.google.android.gms:play-services-measurement:21.0.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\d60c8179fb7c7a0adeecf2ebef988687\jetified-play-services-measurement-21.0.0\AndroidManifest.xml:35:9-38:40
+600            android:name="com.google.android.gms.measurement.AppMeasurementService"
+600-->[com.google.android.gms:play-services-measurement:21.0.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\d60c8179fb7c7a0adeecf2ebef988687\jetified-play-services-measurement-21.0.0\AndroidManifest.xml:36:13-84
+601            android:enabled="true"
+601-->[com.google.android.gms:play-services-measurement:21.0.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\d60c8179fb7c7a0adeecf2ebef988687\jetified-play-services-measurement-21.0.0\AndroidManifest.xml:37:13-35
+602            android:exported="false" />
+602-->[com.google.android.gms:play-services-measurement:21.0.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\d60c8179fb7c7a0adeecf2ebef988687\jetified-play-services-measurement-21.0.0\AndroidManifest.xml:38:13-37
+603        <service
+603-->[com.google.android.gms:play-services-measurement:21.0.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\d60c8179fb7c7a0adeecf2ebef988687\jetified-play-services-measurement-21.0.0\AndroidManifest.xml:39:9-43:72
+604            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+604-->[com.google.android.gms:play-services-measurement:21.0.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\d60c8179fb7c7a0adeecf2ebef988687\jetified-play-services-measurement-21.0.0\AndroidManifest.xml:40:13-87
+605            android:enabled="true"
+605-->[com.google.android.gms:play-services-measurement:21.0.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\d60c8179fb7c7a0adeecf2ebef988687\jetified-play-services-measurement-21.0.0\AndroidManifest.xml:41:13-35
+606            android:exported="false"
+606-->[com.google.android.gms:play-services-measurement:21.0.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\d60c8179fb7c7a0adeecf2ebef988687\jetified-play-services-measurement-21.0.0\AndroidManifest.xml:42:13-37
+607            android:permission="android.permission.BIND_JOB_SERVICE" /> <!-- Needs to be explicitly declared on P+ -->
+607-->[com.google.android.gms:play-services-measurement:21.0.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\d60c8179fb7c7a0adeecf2ebef988687\jetified-play-services-measurement-21.0.0\AndroidManifest.xml:43:13-69
+608        <uses-library
+608-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\df15f9c936b7e07509b9b7df50ae5bd0\jetified-play-services-maps-18.0.2\AndroidManifest.xml:39:9-41:40
+609            android:name="org.apache.http.legacy"
+609-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\df15f9c936b7e07509b9b7df50ae5bd0\jetified-play-services-maps-18.0.2\AndroidManifest.xml:40:13-50
+610            android:required="false" />
+610-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\df15f9c936b7e07509b9b7df50ae5bd0\jetified-play-services-maps-18.0.2\AndroidManifest.xml:41:13-37
+611
+612        <activity
+612-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\e93f20d99103c4c71667792ed93a1b41\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+613            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+613-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\e93f20d99103c4c71667792ed93a1b41\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+614            android:exported="false"
+614-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\e93f20d99103c4c71667792ed93a1b41\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+615            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+615-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\e93f20d99103c4c71667792ed93a1b41\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+616
+617        <meta-data
+617-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\0e9689a37108d78e72dfe3feb9ac56a5\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+618            android:name="com.google.android.gms.version"
+618-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\0e9689a37108d78e72dfe3feb9ac56a5\jetified-play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+619            android:value="@integer/google_play_services_version" />
+619-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\0e9689a37108d78e72dfe3feb9ac56a5\jetified-play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+620        <!--
+621         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+622         with the application context. This config is merged in with the host app's manifest,
+623         but there can only be one provider with the same authority activated at any given
+624         point; so if the end user has two or more different apps that use Facebook SDK, only the
+625         first one will be able to use the provider. To work around this problem, we use the
+626         following placeholder in the authority to identify each host application as if it was
+627         a completely different provider.
+628        -->
+629        <provider
+629-->[com.facebook.android:facebook-core:13.2.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\ec685c58b0431d1c6625990209ce7b39\jetified-facebook-core-13.2.0\AndroidManifest.xml:41:9-44:40
+630            android:name="com.facebook.internal.FacebookInitProvider"
+630-->[com.facebook.android:facebook-core:13.2.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\ec685c58b0431d1c6625990209ce7b39\jetified-facebook-core-13.2.0\AndroidManifest.xml:42:13-70
+631            android:authorities="com.akaarit.woogoods.FacebookInitProvider"
+631-->[com.facebook.android:facebook-core:13.2.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\ec685c58b0431d1c6625990209ce7b39\jetified-facebook-core-13.2.0\AndroidManifest.xml:43:13-72
+632            android:exported="false" />
+632-->[com.facebook.android:facebook-core:13.2.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\ec685c58b0431d1c6625990209ce7b39\jetified-facebook-core-13.2.0\AndroidManifest.xml:44:13-37
+633
+634        <receiver
+634-->[com.facebook.android:facebook-core:13.2.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\ec685c58b0431d1c6625990209ce7b39\jetified-facebook-core-13.2.0\AndroidManifest.xml:46:9-52:20
+635            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+635-->[com.facebook.android:facebook-core:13.2.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\ec685c58b0431d1c6625990209ce7b39\jetified-facebook-core-13.2.0\AndroidManifest.xml:47:13-86
+636            android:exported="false" >
+636-->[com.facebook.android:facebook-core:13.2.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\ec685c58b0431d1c6625990209ce7b39\jetified-facebook-core-13.2.0\AndroidManifest.xml:48:13-37
+637            <intent-filter>
+637-->[com.facebook.android:facebook-core:13.2.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\ec685c58b0431d1c6625990209ce7b39\jetified-facebook-core-13.2.0\AndroidManifest.xml:49:13-51:29
+638                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+638-->[com.facebook.android:facebook-core:13.2.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\ec685c58b0431d1c6625990209ce7b39\jetified-facebook-core-13.2.0\AndroidManifest.xml:50:17-95
+638-->[com.facebook.android:facebook-core:13.2.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\ec685c58b0431d1c6625990209ce7b39\jetified-facebook-core-13.2.0\AndroidManifest.xml:50:25-92
+639            </intent-filter>
+640        </receiver>
+641        <receiver
+641-->[com.facebook.android:facebook-core:13.2.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\ec685c58b0431d1c6625990209ce7b39\jetified-facebook-core-13.2.0\AndroidManifest.xml:53:9-59:20
+642            android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver"
+642-->[com.facebook.android:facebook-core:13.2.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\ec685c58b0431d1c6625990209ce7b39\jetified-facebook-core-13.2.0\AndroidManifest.xml:54:13-118
+643            android:exported="false" >
+643-->[com.facebook.android:facebook-core:13.2.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\ec685c58b0431d1c6625990209ce7b39\jetified-facebook-core-13.2.0\AndroidManifest.xml:55:13-37
+644            <intent-filter>
+644-->[com.facebook.android:facebook-core:13.2.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\ec685c58b0431d1c6625990209ce7b39\jetified-facebook-core-13.2.0\AndroidManifest.xml:56:13-58:29
+645                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED" />
+645-->[com.facebook.android:facebook-core:13.2.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\ec685c58b0431d1c6625990209ce7b39\jetified-facebook-core-13.2.0\AndroidManifest.xml:57:17-103
+645-->[com.facebook.android:facebook-core:13.2.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\ec685c58b0431d1c6625990209ce7b39\jetified-facebook-core-13.2.0\AndroidManifest.xml:57:25-100
+646            </intent-filter>
+647        </receiver>
+648
+649        <service
+649-->[com.google.android.datatransport:transport-backend-cct:3.1.4] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b0c37b3fc40446a56b8aa6d4bbba4bac\jetified-transport-backend-cct-3.1.4\AndroidManifest.xml:29:9-35:19
+650            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+650-->[com.google.android.datatransport:transport-backend-cct:3.1.4] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b0c37b3fc40446a56b8aa6d4bbba4bac\jetified-transport-backend-cct-3.1.4\AndroidManifest.xml:30:13-103
+651            android:exported="false" >
+651-->[com.google.android.datatransport:transport-backend-cct:3.1.4] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b0c37b3fc40446a56b8aa6d4bbba4bac\jetified-transport-backend-cct-3.1.4\AndroidManifest.xml:31:13-37
+652            <meta-data
+652-->[com.google.android.datatransport:transport-backend-cct:3.1.4] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b0c37b3fc40446a56b8aa6d4bbba4bac\jetified-transport-backend-cct-3.1.4\AndroidManifest.xml:32:13-34:39
+653                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+653-->[com.google.android.datatransport:transport-backend-cct:3.1.4] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b0c37b3fc40446a56b8aa6d4bbba4bac\jetified-transport-backend-cct-3.1.4\AndroidManifest.xml:33:17-94
+654                android:value="cct" />
+654-->[com.google.android.datatransport:transport-backend-cct:3.1.4] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b0c37b3fc40446a56b8aa6d4bbba4bac\jetified-transport-backend-cct-3.1.4\AndroidManifest.xml:34:17-36
+655        </service>
+656        <service
+656-->[com.google.android.datatransport:transport-runtime:3.1.4] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\7c44570dd416c351f66e192e99a20546\jetified-transport-runtime-3.1.4\AndroidManifest.xml:26:9-30:19
+657            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+657-->[com.google.android.datatransport:transport-runtime:3.1.4] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\7c44570dd416c351f66e192e99a20546\jetified-transport-runtime-3.1.4\AndroidManifest.xml:27:13-117
+658            android:exported="false"
+658-->[com.google.android.datatransport:transport-runtime:3.1.4] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\7c44570dd416c351f66e192e99a20546\jetified-transport-runtime-3.1.4\AndroidManifest.xml:28:13-37
+659            android:permission="android.permission.BIND_JOB_SERVICE" >
+659-->[com.google.android.datatransport:transport-runtime:3.1.4] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\7c44570dd416c351f66e192e99a20546\jetified-transport-runtime-3.1.4\AndroidManifest.xml:29:13-69
+660        </service>
+661
+662        <receiver
+662-->[com.google.android.datatransport:transport-runtime:3.1.4] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\7c44570dd416c351f66e192e99a20546\jetified-transport-runtime-3.1.4\AndroidManifest.xml:32:9-34:40
+663            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+663-->[com.google.android.datatransport:transport-runtime:3.1.4] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\7c44570dd416c351f66e192e99a20546\jetified-transport-runtime-3.1.4\AndroidManifest.xml:33:13-132
+664            android:exported="false" />
+664-->[com.google.android.datatransport:transport-runtime:3.1.4] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\7c44570dd416c351f66e192e99a20546\jetified-transport-runtime-3.1.4\AndroidManifest.xml:34:13-37
+665
+666        <provider
+666-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:31:9-39:20
+667            android:name="androidx.startup.InitializationProvider"
+667-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:32:13-67
+668            android:authorities="com.akaarit.woogoods.androidx-startup"
+668-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:33:13-68
+669            android:exported="false" >
+669-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:34:13-37
+670            <meta-data
+670-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:36:13-38:52
+671                android:name="androidx.work.WorkManagerInitializer"
+671-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:37:17-68
+672                android:value="androidx.startup" />
+672-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:38:17-49
+673            <meta-data
+673-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\16e277f9130439d8d2af4ee31087ea94\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+674                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+674-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\16e277f9130439d8d2af4ee31087ea94\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+675                android:value="androidx.startup" />
+675-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\16e277f9130439d8d2af4ee31087ea94\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+676            <meta-data
+676-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\3cf86d0cf593683cbe2623a3dda58ce3\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+677                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+677-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\3cf86d0cf593683cbe2623a3dda58ce3\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+678                android:value="androidx.startup" />
+678-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\3cf86d0cf593683cbe2623a3dda58ce3\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+679            <meta-data
+679-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\74d03182f8955ce7eb1f27ebc019263a\jetified-profileinstaller-1.1.0\AndroidManifest.xml:31:13-33:52
+680                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+680-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\74d03182f8955ce7eb1f27ebc019263a\jetified-profileinstaller-1.1.0\AndroidManifest.xml:32:17-85
+681                android:value="androidx.startup" />
+681-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\74d03182f8955ce7eb1f27ebc019263a\jetified-profileinstaller-1.1.0\AndroidManifest.xml:33:17-49
+682        </provider>
+683
+684        <service
+684-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:41:9-46:35
+685            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+685-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:42:13-88
+686            android:directBootAware="false"
+686-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:43:13-44
+687            android:enabled="@bool/enable_system_alarm_service_default"
+687-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:44:13-72
+688            android:exported="false" />
+688-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:45:13-37
+689        <service
+689-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:47:9-53:35
+690            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+690-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:48:13-84
+691            android:directBootAware="false"
+691-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:49:13-44
+692            android:enabled="@bool/enable_system_job_service_default"
+692-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:50:13-70
+693            android:exported="true"
+693-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:51:13-36
+694            android:permission="android.permission.BIND_JOB_SERVICE" />
+694-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:52:13-69
+695        <service
+695-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:54:9-59:35
+696            android:name="androidx.work.impl.foreground.SystemForegroundService"
+696-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:55:13-81
+697            android:directBootAware="false"
+697-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:56:13-44
+698            android:enabled="@bool/enable_system_foreground_service_default"
+698-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:57:13-77
+699            android:exported="false" />
+699-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:58:13-37
+700
+701        <receiver
+701-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:61:9-66:35
+702            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+702-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:62:13-88
+703            android:directBootAware="false"
+703-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:63:13-44
+704            android:enabled="true"
+704-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:64:13-35
+705            android:exported="false" />
+705-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:65:13-37
+706        <receiver
+706-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:67:9-77:20
+707            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+707-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:68:13-106
+708            android:directBootAware="false"
+708-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:69:13-44
+709            android:enabled="false"
+709-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:70:13-36
+710            android:exported="false" >
+710-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:71:13-37
+711            <intent-filter>
+711-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:73:13-76:29
+712                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+712-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:74:17-87
+712-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:74:25-84
+713                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+713-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:75:17-90
+713-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:75:25-87
+714            </intent-filter>
+715        </receiver>
+716        <receiver
+716-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:78:9-88:20
+717            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+717-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:79:13-104
+718            android:directBootAware="false"
+718-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:80:13-44
+719            android:enabled="false"
+719-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:81:13-36
+720            android:exported="false" >
+720-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:82:13-37
+721            <intent-filter>
+721-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:84:13-87:29
+722                <action android:name="android.intent.action.BATTERY_OKAY" />
+722-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:85:17-77
+722-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:85:25-74
+723                <action android:name="android.intent.action.BATTERY_LOW" />
+723-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:86:17-76
+723-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:86:25-73
+724            </intent-filter>
+725        </receiver>
+726        <receiver
+726-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:89:9-99:20
+727            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+727-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:90:13-104
+728            android:directBootAware="false"
+728-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:91:13-44
+729            android:enabled="false"
+729-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:92:13-36
+730            android:exported="false" >
+730-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:93:13-37
+731            <intent-filter>
+731-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:95:13-98:29
+732                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+732-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:96:17-83
+732-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:96:25-80
+733                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+733-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:97:17-82
+733-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:97:25-79
+734            </intent-filter>
+735        </receiver>
+736        <receiver
+736-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:100:9-109:20
+737            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+737-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:101:13-103
+738            android:directBootAware="false"
+738-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:102:13-44
+739            android:enabled="false"
+739-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:103:13-36
+740            android:exported="false" >
+740-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:104:13-37
+741            <intent-filter>
+741-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:106:13-108:29
+742                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+742-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:107:17-79
+742-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:107:25-76
+743            </intent-filter>
+744        </receiver>
+745        <receiver
+745-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:110:9-121:20
+746            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+746-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:111:13-88
+747            android:directBootAware="false"
+747-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:112:13-44
+748            android:enabled="false"
+748-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:113:13-36
+749            android:exported="false" >
+749-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:114:13-37
+750            <intent-filter>
+750-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:116:13-120:29
+751                <action android:name="android.intent.action.BOOT_COMPLETED" />
+751-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:108:17-79
+751-->[com.onesignal:OneSignal:4.7.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\55e853597d483fd5cdb91f70386fa062\jetified-OneSignal-4.7.0\AndroidManifest.xml:108:25-76
+752                <action android:name="android.intent.action.TIME_SET" />
+752-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:118:17-73
+752-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:118:25-70
+753                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+753-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:119:17-81
+753-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:119:25-78
+754            </intent-filter>
+755        </receiver>
+756        <receiver
+756-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:122:9-131:20
+757            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+757-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:123:13-99
+758            android:directBootAware="false"
+758-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:124:13-44
+759            android:enabled="@bool/enable_system_alarm_service_default"
+759-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:125:13-72
+760            android:exported="false" >
+760-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:126:13-37
+761            <intent-filter>
+761-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:128:13-130:29
+762                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+762-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:129:17-98
+762-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:129:25-95
+763            </intent-filter>
+764        </receiver>
+765        <receiver
+765-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:132:9-142:20
+766            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+766-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:133:13-78
+767            android:directBootAware="false"
+767-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:134:13-44
+768            android:enabled="true"
+768-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:135:13-35
+769            android:exported="true"
+769-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:136:13-36
+770            android:permission="android.permission.DUMP" >
+770-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:137:13-57
+771            <intent-filter>
+771-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:139:13-141:29
+772                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+772-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:140:17-88
+772-->[androidx.work:work-runtime:2.7.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\b1de1ec7aeb6cb60a8c396895195b5ee\work-runtime-2.7.1\AndroidManifest.xml:140:25-85
+773            </intent-filter>
+774        </receiver>
+775        <receiver
+775-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\74d03182f8955ce7eb1f27ebc019263a\jetified-profileinstaller-1.1.0\AndroidManifest.xml:36:9-45:20
+776            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+776-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\74d03182f8955ce7eb1f27ebc019263a\jetified-profileinstaller-1.1.0\AndroidManifest.xml:37:13-76
+777            android:directBootAware="false"
+777-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\74d03182f8955ce7eb1f27ebc019263a\jetified-profileinstaller-1.1.0\AndroidManifest.xml:38:13-44
+778            android:enabled="true"
+778-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\74d03182f8955ce7eb1f27ebc019263a\jetified-profileinstaller-1.1.0\AndroidManifest.xml:39:13-35
+779            android:exported="true"
+779-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\74d03182f8955ce7eb1f27ebc019263a\jetified-profileinstaller-1.1.0\AndroidManifest.xml:40:13-36
+780            android:permission="android.permission.DUMP" >
+780-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\74d03182f8955ce7eb1f27ebc019263a\jetified-profileinstaller-1.1.0\AndroidManifest.xml:41:13-57
+781            <intent-filter>
+781-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\74d03182f8955ce7eb1f27ebc019263a\jetified-profileinstaller-1.1.0\AndroidManifest.xml:42:13-44:29
+782                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+782-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\74d03182f8955ce7eb1f27ebc019263a\jetified-profileinstaller-1.1.0\AndroidManifest.xml:43:17-91
+782-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\74d03182f8955ce7eb1f27ebc019263a\jetified-profileinstaller-1.1.0\AndroidManifest.xml:43:25-88
+783            </intent-filter>
+784        </receiver>
+785
+786        <service
+786-->[androidx.room:room-runtime:2.2.5] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\cc796c4ffb7a841facaf13fea070972d\room-runtime-2.2.5\AndroidManifest.xml:25:9-28:40
+787            android:name="androidx.room.MultiInstanceInvalidationService"
+787-->[androidx.room:room-runtime:2.2.5] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\cc796c4ffb7a841facaf13fea070972d\room-runtime-2.2.5\AndroidManifest.xml:26:13-74
+788            android:directBootAware="true"
+788-->[androidx.room:room-runtime:2.2.5] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\cc796c4ffb7a841facaf13fea070972d\room-runtime-2.2.5\AndroidManifest.xml:27:13-43
+789            android:exported="false" />
+789-->[androidx.room:room-runtime:2.2.5] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\cc796c4ffb7a841facaf13fea070972d\room-runtime-2.2.5\AndroidManifest.xml:28:13-37
+790
+791        <activity
+791-->[:sslcommerzlibrary:] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\503b3e2c33807ac8b041958f87b166c4\jetified-sslcommerzlibrary\AndroidManifest.xml:23:9-28:67
+792            android:name="com.sslwireless.sslcommerzlibrary.view.activity.MainUIActivitySSLC"
+792-->[:sslcommerzlibrary:] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\503b3e2c33807ac8b041958f87b166c4\jetified-sslcommerzlibrary\AndroidManifest.xml:24:13-94
+793            android:configChanges="layoutDirection|locale"
+793-->[:sslcommerzlibrary:] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\503b3e2c33807ac8b041958f87b166c4\jetified-sslcommerzlibrary\AndroidManifest.xml:25:13-59
+794            android:screenOrientation="portrait"
+794-->[:sslcommerzlibrary:] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\503b3e2c33807ac8b041958f87b166c4\jetified-sslcommerzlibrary\AndroidManifest.xml:26:13-49
+795            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+795-->[:sslcommerzlibrary:] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\503b3e2c33807ac8b041958f87b166c4\jetified-sslcommerzlibrary\AndroidManifest.xml:27:13-69
+796            android:windowSoftInputMode="stateHidden|adjustPan" />
+796-->[:sslcommerzlibrary:] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\503b3e2c33807ac8b041958f87b166c4\jetified-sslcommerzlibrary\AndroidManifest.xml:28:13-64
+797        <activity
+797-->[:sslcommerzlibrary:] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\503b3e2c33807ac8b041958f87b166c4\jetified-sslcommerzlibrary\AndroidManifest.xml:29:9-33:58
+798            android:name="com.sslwireless.sslcommerzlibrary.view.activity.WebViewActivitySSLC"
+798-->[:sslcommerzlibrary:] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\503b3e2c33807ac8b041958f87b166c4\jetified-sslcommerzlibrary\AndroidManifest.xml:30:13-95
+799            android:screenOrientation="portrait"
+799-->[:sslcommerzlibrary:] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\503b3e2c33807ac8b041958f87b166c4\jetified-sslcommerzlibrary\AndroidManifest.xml:31:13-49
+800            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+800-->[:sslcommerzlibrary:] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\503b3e2c33807ac8b041958f87b166c4\jetified-sslcommerzlibrary\AndroidManifest.xml:32:13-69
+801            android:windowSoftInputMode="adjustResize" />
+801-->[:sslcommerzlibrary:] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\503b3e2c33807ac8b041958f87b166c4\jetified-sslcommerzlibrary\AndroidManifest.xml:33:13-55
+802        <activity
+802-->[:sslcommerzlibrary:] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\503b3e2c33807ac8b041958f87b166c4\jetified-sslcommerzlibrary\AndroidManifest.xml:34:9-38:55
+803            android:name="com.sslwireless.sslcommerzlibrary.view.activity.SSLOffersActivitySSLC"
+803-->[:sslcommerzlibrary:] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\503b3e2c33807ac8b041958f87b166c4\jetified-sslcommerzlibrary\AndroidManifest.xml:35:13-97
+804            android:screenOrientation="portrait"
+804-->[:sslcommerzlibrary:] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\503b3e2c33807ac8b041958f87b166c4\jetified-sslcommerzlibrary\AndroidManifest.xml:36:13-49
+805            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+805-->[:sslcommerzlibrary:] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\503b3e2c33807ac8b041958f87b166c4\jetified-sslcommerzlibrary\AndroidManifest.xml:37:13-69
+806            android:windowSoftInputMode="adjustPan" />
+806-->[:sslcommerzlibrary:] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\503b3e2c33807ac8b041958f87b166c4\jetified-sslcommerzlibrary\AndroidManifest.xml:38:13-52
+807        <activity
+807-->[:sslcommerzlibrary:] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\503b3e2c33807ac8b041958f87b166c4\jetified-sslcommerzlibrary\AndroidManifest.xml:39:9-43:55
+808            android:name="com.sslwireless.sslcommerzlibrary.view.activity.FAQActivitySSLC"
+808-->[:sslcommerzlibrary:] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\503b3e2c33807ac8b041958f87b166c4\jetified-sslcommerzlibrary\AndroidManifest.xml:40:13-91
+809            android:screenOrientation="portrait"
+809-->[:sslcommerzlibrary:] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\503b3e2c33807ac8b041958f87b166c4\jetified-sslcommerzlibrary\AndroidManifest.xml:41:13-49
+810            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+810-->[:sslcommerzlibrary:] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\503b3e2c33807ac8b041958f87b166c4\jetified-sslcommerzlibrary\AndroidManifest.xml:42:13-69
+811            android:windowSoftInputMode="adjustPan" />
+811-->[:sslcommerzlibrary:] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\503b3e2c33807ac8b041958f87b166c4\jetified-sslcommerzlibrary\AndroidManifest.xml:43:13-52
+812        <activity
+812-->[:sslcommerzlibrary:] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\503b3e2c33807ac8b041958f87b166c4\jetified-sslcommerzlibrary\AndroidManifest.xml:44:9-48:55
+813            android:name="com.sslwireless.sslcommerzlibrary.view.activity.SupportActivitySSLC"
+813-->[:sslcommerzlibrary:] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\503b3e2c33807ac8b041958f87b166c4\jetified-sslcommerzlibrary\AndroidManifest.xml:45:13-95
+814            android:screenOrientation="portrait"
+814-->[:sslcommerzlibrary:] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\503b3e2c33807ac8b041958f87b166c4\jetified-sslcommerzlibrary\AndroidManifest.xml:46:13-49
+815            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+815-->[:sslcommerzlibrary:] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\503b3e2c33807ac8b041958f87b166c4\jetified-sslcommerzlibrary\AndroidManifest.xml:47:13-69
+816            android:windowSoftInputMode="adjustPan" />
+816-->[:sslcommerzlibrary:] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\503b3e2c33807ac8b041958f87b166c4\jetified-sslcommerzlibrary\AndroidManifest.xml:48:13-52
+817        <activity
+817-->[:sslcommerzlibrary:] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\503b3e2c33807ac8b041958f87b166c4\jetified-sslcommerzlibrary\AndroidManifest.xml:49:9-53:55
+818            android:name="com.sslwireless.sslcommerzlibrary.view.activity.ActivityReadNFC"
+818-->[:sslcommerzlibrary:] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\503b3e2c33807ac8b041958f87b166c4\jetified-sslcommerzlibrary\AndroidManifest.xml:50:13-91
+819            android:screenOrientation="portrait"
+819-->[:sslcommerzlibrary:] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\503b3e2c33807ac8b041958f87b166c4\jetified-sslcommerzlibrary\AndroidManifest.xml:51:13-49
+820            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+820-->[:sslcommerzlibrary:] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\503b3e2c33807ac8b041958f87b166c4\jetified-sslcommerzlibrary\AndroidManifest.xml:52:13-69
+821            android:windowSoftInputMode="adjustPan" /> <!-- <activity -->
+821-->[:sslcommerzlibrary:] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\503b3e2c33807ac8b041958f87b166c4\jetified-sslcommerzlibrary\AndroidManifest.xml:53:13-52
+822        <!-- android:name=".view.activity.NFCCardReading" -->
+823        <!-- android:screenOrientation="portrait" -->
+824        <!-- android:hardwareAccelerated="false"> -->
+825        <!-- <intent-filter> -->
+826        <!-- <action android:name="android.nfc.action.TECH_DISCOVERED" /> -->
+827        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+828        <!-- </intent-filter> -->
+829        <!-- <meta-data -->
+830        <!-- android:name="android.nfc.action.TECH_DISCOVERED" -->
+831        <!-- android:resource="@xml/nfc_tech_filter" /> -->
+832        <!-- </activity> -->
+833        <receiver
+833-->[:sslcommerzlibrary:] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\503b3e2c33807ac8b041958f87b166c4\jetified-sslcommerzlibrary\AndroidManifest.xml:71:9-77:20
+834            android:name="com.sslwireless.sslcommerzlibrary.view.custom.SSLSmsBroadcastReceiver"
+834-->[:sslcommerzlibrary:] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\503b3e2c33807ac8b041958f87b166c4\jetified-sslcommerzlibrary\AndroidManifest.xml:72:13-97
+835            android:exported="true" >
+835-->[:sslcommerzlibrary:] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\503b3e2c33807ac8b041958f87b166c4\jetified-sslcommerzlibrary\AndroidManifest.xml:73:13-36
+836            <intent-filter>
+836-->[:sslcommerzlibrary:] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\503b3e2c33807ac8b041958f87b166c4\jetified-sslcommerzlibrary\AndroidManifest.xml:74:13-76:29
+837                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVE" />
+837-->[:sslcommerzlibrary:] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\503b3e2c33807ac8b041958f87b166c4\jetified-sslcommerzlibrary\AndroidManifest.xml:75:17-93
+837-->[:sslcommerzlibrary:] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\503b3e2c33807ac8b041958f87b166c4\jetified-sslcommerzlibrary\AndroidManifest.xml:75:25-90
+838            </intent-filter>
+839        </receiver>
+840
+841        <activity
+841-->[com.braintreepayments.api:google-payment:3.3.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\1ae7352c6e7b82429ce4864bcab25137\jetified-google-payment-3.3.1\AndroidManifest.xml:12:9-14:62
+842            android:name="com.braintreepayments.api.GooglePaymentActivity"
+842-->[com.braintreepayments.api:google-payment:3.3.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\1ae7352c6e7b82429ce4864bcab25137\jetified-google-payment-3.3.1\AndroidManifest.xml:13:13-75
+843            android:theme="@style/bt_transparent_activity" />
+843-->[com.braintreepayments.api:google-payment:3.3.1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\1ae7352c6e7b82429ce4864bcab25137\jetified-google-payment-3.3.1\AndroidManifest.xml:14:13-59
+844
+845        <provider
+845-->[org.jfrog.cardinalcommerce.gradle:cardinalmobilesdk:2.2.4-1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\c48a9b118aca34a240c779f06aa74e8d\jetified-cardinalmobilesdk-2.2.4-1\AndroidManifest.xml:17:9-21:40
+846            android:name="com.cardinalcommerce.shared.cs.utils.CCInitProvider"
+846-->[org.jfrog.cardinalcommerce.gradle:cardinalmobilesdk:2.2.4-1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\c48a9b118aca34a240c779f06aa74e8d\jetified-cardinalmobilesdk-2.2.4-1\AndroidManifest.xml:18:13-79
+847            android:authorities="com.akaarit.woogoods.CCInitProvider"
+847-->[org.jfrog.cardinalcommerce.gradle:cardinalmobilesdk:2.2.4-1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\c48a9b118aca34a240c779f06aa74e8d\jetified-cardinalmobilesdk-2.2.4-1\AndroidManifest.xml:19:13-66
+848            android:enabled="true"
+848-->[org.jfrog.cardinalcommerce.gradle:cardinalmobilesdk:2.2.4-1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\c48a9b118aca34a240c779f06aa74e8d\jetified-cardinalmobilesdk-2.2.4-1\AndroidManifest.xml:20:13-35
+849            android:exported="false" />
+849-->[org.jfrog.cardinalcommerce.gradle:cardinalmobilesdk:2.2.4-1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\c48a9b118aca34a240c779f06aa74e8d\jetified-cardinalmobilesdk-2.2.4-1\AndroidManifest.xml:21:13-37
+850
+851        <activity
+851-->[org.jfrog.cardinalcommerce.gradle:cardinalmobilesdk:2.2.4-1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\c48a9b118aca34a240c779f06aa74e8d\jetified-cardinalmobilesdk-2.2.4-1\AndroidManifest.xml:23:9-25:65
+852            android:name="com.cardinalcommerce.shared.cs.userinterfaces.ChallengeHTMLView"
+852-->[org.jfrog.cardinalcommerce.gradle:cardinalmobilesdk:2.2.4-1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\c48a9b118aca34a240c779f06aa74e8d\jetified-cardinalmobilesdk-2.2.4-1\AndroidManifest.xml:24:13-91
+853            android:theme="@style/CardinalSDKTheme.ActionBar" />
+853-->[org.jfrog.cardinalcommerce.gradle:cardinalmobilesdk:2.2.4-1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\c48a9b118aca34a240c779f06aa74e8d\jetified-cardinalmobilesdk-2.2.4-1\AndroidManifest.xml:25:13-62
+854        <activity
+854-->[org.jfrog.cardinalcommerce.gradle:cardinalmobilesdk:2.2.4-1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\c48a9b118aca34a240c779f06aa74e8d\jetified-cardinalmobilesdk-2.2.4-1\AndroidManifest.xml:26:9-29:76
+855            android:name="com.cardinalcommerce.shared.cs.userinterfaces.ChallengeNativeView"
+855-->[org.jfrog.cardinalcommerce.gradle:cardinalmobilesdk:2.2.4-1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\c48a9b118aca34a240c779f06aa74e8d\jetified-cardinalmobilesdk-2.2.4-1\AndroidManifest.xml:27:13-93
+856            android:theme="@style/CardinalSDKTheme.ActionBar"
+856-->[org.jfrog.cardinalcommerce.gradle:cardinalmobilesdk:2.2.4-1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\c48a9b118aca34a240c779f06aa74e8d\jetified-cardinalmobilesdk-2.2.4-1\AndroidManifest.xml:28:13-62
+857            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+857-->[org.jfrog.cardinalcommerce.gradle:cardinalmobilesdk:2.2.4-1] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\c48a9b118aca34a240c779f06aa74e8d\jetified-cardinalmobilesdk-2.2.4-1\AndroidManifest.xml:29:13-73
+858
+859        <meta-data
+859-->[com.google.android.instantapps:instantapps:1.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\8fe6d5de3bd0c11e763e9563658babe6\jetified-instantapps-1.1.0\AndroidManifest.xml:10:9-12:33
+860            android:name="aia-compat-api-min-version"
+860-->[com.google.android.instantapps:instantapps:1.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\8fe6d5de3bd0c11e763e9563658babe6\jetified-instantapps-1.1.0\AndroidManifest.xml:11:13-54
+861            android:value="1" />
+861-->[com.google.android.instantapps:instantapps:1.1.0] C:\Users\Red Spot\.gradle\caches\transforms-2\files-2.1\8fe6d5de3bd0c11e763e9563658babe6\jetified-instantapps-1.1.0\AndroidManifest.xml:12:13-30
+862    </application>
+863
+864</manifest>

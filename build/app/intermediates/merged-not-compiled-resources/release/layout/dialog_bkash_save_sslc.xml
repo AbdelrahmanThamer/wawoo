@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/mainLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <com.sslwireless.sslcommerzlibrary.view.custom.SSLCCustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/save_bkash_wallet"
+                    android:id="@+id/tvTitle"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    app:textStyle="Bold" />
+
+                <com.sslwireless.sslcommerzlibrary.view.custom.SSLCCustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/tvMessage"
+                    android:text="@string/want_to_save_bkash_wallet"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    app:textStyle="Normal" />
+            </LinearLayout>
+
+            <com.sslwireless.sslcommerzlibrary.view.custom.SSLCCustomTextView
+                android:id="@+id/tvTerms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/terms"
+                android:textSize="17sp"
+                app:textStyle="Bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <com.sslwireless.sslcommerzlibrary.view.custom.SSLCCustomTextView
+                android:id="@+id/tvNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimarySSL"
+                android:text="@string/ssl_no"
+                android:textSize="17sp"
+                app:textStyle="Bold" />
+
+            <com.sslwireless.sslcommerzlibrary.view.custom.SSLCCustomTextView
+                android:id="@+id/tvYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/custom_btn_punch_sslc"
+                android:textColor="@color/white"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/yes_save_it"
+                android:textSize="17sp"
+                app:textStyle="Bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/white_off" />
+</LinearLayout>

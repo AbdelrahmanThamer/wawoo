@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\redspot\\wawoo\\app\\build\\app\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-w700dp-v13\\values-w700dp-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Red Spot\\.gradle\\caches\\transforms-2\\files-2.1\\0fca14eb8ffa6d5caa7f2d875fce02cd\\jetified-drop-in-5.2.1\\res\\values-w700dp-v13\\values-w700dp-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "45",
+                        "endOffsets": "96"
+                    }
+                }
+            ]
+        }
+    ]
+}

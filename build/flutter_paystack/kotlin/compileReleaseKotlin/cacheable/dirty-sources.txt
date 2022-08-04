@@ -1,0 +1,6 @@
+C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\flutter_paystack-1.0.5+1\android\src\main\kotlin\co\paystack\flutterpaystack\AuthSingleton.kt
+C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\flutter_paystack-1.0.5+1\android\src\main\kotlin\co\paystack\flutterpaystack\AuthActivity.kt
+C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\flutter_paystack-1.0.5+1\android\src\main\kotlin\co\paystack\flutterpaystack\Crypto.kt
+C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\flutter_paystack-1.0.5+1\android\src\main\kotlin\co\paystack\flutterpaystack\MethodCallHandlerImpl.kt
+C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\flutter_paystack-1.0.5+1\android\src\main\kotlin\co\paystack\flutterpaystack\AuthDelegate.kt
+C:\Users\Red Spot\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\flutter_paystack-1.0.5+1\android\src\main\kotlin\co\paystack\flutterpaystack\FlutterPaystackPlugin.kt
